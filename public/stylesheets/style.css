@@ -1,12 +1,28 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+main{
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+  overflow: auto;
 }
 
-a {
-  color: #00B7FF;
+.logo{
+  font-family: 'Amatic SC', cursive;
+  font-size: 25vh;
+  font-weight: 100;
+  margin-top: 30vh;
+  /*line-height: 100vh;*/
+  /*color: #424242;*/
 }
 
-*{
-  background-color: red; 
+#owlFaceInLogo{
+  font-family: 'Permanent Marker', cursive;
+  font-weight: 100;
+  color: black;
+  /*color: #424242;*/
+}
+
+#text{
+  margin-top: 5vh;
+  font-size: 5vh;
 }
