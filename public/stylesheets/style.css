@@ -8,9 +8,9 @@ main{
 
 .logo{
   font-family: 'Amatic SC', cursive;
-  font-size: 25vh;
+  font-size: 10vh;
   font-weight: 100;
-  margin-top: 30vh;
+  /*margin-top: 10vh;*/
   /*line-height: 100vh;*/
   /*color: #424242;*/
 }
@@ -23,6 +23,47 @@ main{
 }
 
 #text{
-  margin-top: 5vh;
-  font-size: 5vh;
+  /*font-family: 'Catamaran', sans-serif;*/
+  /*font-family: 'Yantramanav', sans-serif;*/
+  font-family: 'Amatic SC', cursive;
+  margin-top: 5%;
+}
+
+.title{
+  font-weight: 900;
+  text-decoration: underline;
+    font-size: 2em;
+}
+
+#body1{
+  font-family: 'Catamaran', sans-serif;
+  font-weight: 300;
+  font-size: 1em;
+  line-height: 1.25em;
+  display:flex;
+  flex-direction: row;
+}
+
+#body1 > div {
+  width: 25%;
+  margin:auto;
+  text-align: left;
+  font-size: 1em;
+}
+
+
+#body2{
+  font-family: 'Catamaran', sans-serif;
+  display:flex;
+  flex-direction: row;
+  font-size: 1em;
+  line-height: 1.25em;
+  font-weight: 300;
+  font-size: 2.5vh;
+}
+
+#body2 > div {
+  width: 25%;
+  margin:auto;
+  text-align: left;
 }
