@@ -4,21 +4,30 @@ main{
   height: 100vh;
   text-align: center;
   overflow: auto;
+  background-image: linear-gradient(lightgrey, white);
+  /*background-image: linear-gradient(white, lightgrey);*/
 }
 
 .logo{
   font-family: 'Amatic SC', cursive;
-  font-size: 10vh;
+  font-size: 15vh;
   font-weight: 100;
-  /*margin-top: 10vh;*/
+  margin-top: 10vh;
+  letter-spacing: 2vw;
   /*line-height: 100vh;*/
   /*color: #424242;*/
+  /*color: grey;*/
+  /*background-color: lightgrey;*/
 }
 
 #owlFaceInLogo{
   font-family: 'Permanent Marker', cursive;
   font-weight: 100;
-  color: black;
+  /*color: #05500f;*/
+  color: darkgreen;
+  letter-spacing: 0;
+  margin-right: 2vw;
+
   /*color: #424242;*/
 }
 
@@ -32,10 +41,12 @@ main{
 .title{
   font-weight: 900;
   text-decoration: underline;
-    font-size: 2em;
+  font-size: 2em;
+  padding: 1vh;
+    /*color: grey;*/
 }
 
-#body1{
+#body{
   font-family: 'Catamaran', sans-serif;
   font-weight: 300;
   font-size: 1em;
@@ -44,26 +55,9 @@ main{
   flex-direction: row;
 }
 
-#body1 > div {
+#body > div {
   width: 25%;
   margin:auto;
   text-align: left;
   font-size: 1em;
-}
-
-
-#body2{
-  font-family: 'Catamaran', sans-serif;
-  display:flex;
-  flex-direction: row;
-  font-size: 1em;
-  line-height: 1.25em;
-  font-weight: 300;
-  font-size: 2.5vh;
-}
-
-#body2 > div {
-  width: 25%;
-  margin:auto;
-  text-align: left;
 }
