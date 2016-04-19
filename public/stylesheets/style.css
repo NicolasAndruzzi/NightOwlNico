@@ -4,17 +4,17 @@ main{
   height: 100vh;
   text-align: center;
   overflow: auto;
-  background-image: linear-gradient(lightgrey, white);
+  background-image: linear-gradient(#D9D9D9, white, white);
   /*background-image: linear-gradient(white, lightgrey);*/
 }
 
 .logo{
   font-family: 'Amatic SC', cursive;
-  font-size: 15vh;
+  font-size: 20vh;
   font-weight: 100;
-  margin-top: 10vh;
+  /*margin-top: 10vh;*/
   letter-spacing: 2vw;
-  /*line-height: 100vh;*/
+  line-height: 100vh;
   /*color: #424242;*/
   /*color: grey;*/
   /*background-color: lightgrey;*/
@@ -24,7 +24,8 @@ main{
   font-family: 'Permanent Marker', cursive;
   font-weight: 100;
   /*color: #05500f;*/
-  color: darkgreen;
+  /*color: darkgreen;*/
+  color: #004d00;
   letter-spacing: 0;
   margin-right: 2vw;
 
@@ -40,9 +41,10 @@ main{
 
 .title{
   font-weight: 900;
-  text-decoration: underline;
+  /*text-decoration: underline;*/
   font-size: 2em;
   padding: 1vh;
+  letter-spacing: .25em;
     /*color: grey;*/
 }
 
