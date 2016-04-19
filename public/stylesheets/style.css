@@ -15,26 +15,17 @@ main{
   /*margin-top: 10vh;*/
   letter-spacing: 2vw;
   line-height: 100vh;
-  /*color: #424242;*/
-  /*color: grey;*/
-  /*background-color: lightgrey;*/
 }
 
 #owlFaceInLogo{
   font-family: 'Permanent Marker', cursive;
   font-weight: 100;
-  /*color: #05500f;*/
-  /*color: darkgreen;*/
   color: #004d00;
   letter-spacing: 0;
   margin-right: 2vw;
-
-  /*color: #424242;*/
 }
 
 #text{
-  /*font-family: 'Catamaran', sans-serif;*/
-  /*font-family: 'Yantramanav', sans-serif;*/
   font-family: 'Amatic SC', cursive;
   margin-top: 5%;
 }
@@ -45,7 +36,6 @@ main{
   font-size: 2em;
   padding: 1vh;
   letter-spacing: .25em;
-    /*color: grey;*/
 }
 
 #body{
