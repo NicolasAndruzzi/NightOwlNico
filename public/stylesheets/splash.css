@@ -19,17 +19,6 @@ main{
   background-color: black;
 }
 
-#moon{
-  height: 20vh;
-  background-color: green;
-  position: fixed;
-  right: 0;
-  left: 0;
-  margin-right: auto;
-  margin-left: auto;
-  z-index: -1;
-}
-
 #logoContainer{
   display: inline-flex;
   flex-direction: row;
@@ -43,7 +32,23 @@ main{
   font-size: 12vw;
   font-weight: 100;
   color: white;
-  background-color: red;
+  /*background-color: red;*/
+}
+
+#owlAndMoonContainer{
+
+}
+
+#moon{
+  width: 33vw;
+  /*background-color: green;*/
+  position: absolute;
+  margin: auto;
+  left: 22.75vw;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+  border-radius: 16.5vw;
 }
 
 #owlFaceInLogo{
@@ -51,7 +56,7 @@ main{
   font-size: 13vw;
   font-weight: 100;
   color: darkgreen;
-  background-color: orange;
+  /*background-color: orange;*/
 }
 
 #logo2{
@@ -59,7 +64,7 @@ main{
   font-size: 12vw;
   font-weight: 100;
   color: white;
-  background-color: red;
+  /*background-color: red;*/
 }
 
 /*#text{
