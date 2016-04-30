@@ -35,28 +35,28 @@ main{
   /*background-color: red;*/
 }
 
-#owlAndMoonContainer{
-
-}
-
 #moon{
-  width: 33vw;
-  /*background-color: green;*/
+  width: 32vw;
+  background-color: green;
   position: absolute;
   margin: auto;
-  left: 22.75vw;
+  left: 23.3vw;
   top: 0;
   bottom: 0;
   z-index: -1;
-  border-radius: 16.5vw;
+  border-radius: 50%;
 }
 
 #owlFaceInLogo{
   font-family: 'Permanent Marker', cursive;
-  font-size: 13vw;
+  font-size: 12vw;
   font-weight: 100;
   color: darkgreen;
   /*background-color: orange;*/
+}
+
+a{
+  text-decoration: none;
 }
 
 #logo2{
