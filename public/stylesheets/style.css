@@ -61,6 +61,7 @@ black(Safe 16 Hex3) cmyk(0%, 0%, 0%, 100%) #000000*/
   bottom: 0;
   z-index: -1;
   border-radius: 50%;
+  opacity: .9;
 }
 
 #logoContainer a{
