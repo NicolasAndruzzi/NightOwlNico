@@ -40,15 +40,30 @@ black(Safe 16 Hex3) cmyk(0%, 0%, 0%, 100%) #000000*/
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  width: 100vw;
+}
 
+.logoLetter{
+  font-size: 12vw;
+  transition: all .5s;
 }
 
 #logo1{
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
   font-family: 'Amatic SC', cursive;
   font-size: 12vw;
   font-weight: 100;
   color: white;
-  /*background-color: red;*/
+  /*background-color: green;*/
+}
+
+.logoLetter:hover{
+  font-size: 14vw;
+  transition: all .15s;
 }
 
 #moon{
@@ -56,27 +71,45 @@ black(Safe 16 Hex3) cmyk(0%, 0%, 0%, 100%) #000000*/
   /*background-color: green;*/
   position: absolute;
   margin: auto;
-  left: 23.3vw;
+  left: 23.1vw;
   top: 0;
   bottom: 0;
   z-index: -1;
   border-radius: 50%;
-  opacity: .9;
+  opacity: .95;
+  transition: all 1.5s;
 }
 
 #logoContainer a{
   text-decoration: none;
 }
 
+#logoContainer a:hover #owlFaceInLogo{
+  font-size: 13vw;
+  transition: all .1s;
+}
+
+#logoContainer a:hover #moon{
+  box-shadow: 0 0 6vw #fff;
+  opacity: 1;
+  transition: all .1s;
+}
+
 #owlFaceInLogo{
   font-family: 'Permanent Marker', cursive;
   font-size: 12vw;
   font-weight: 100;
-  color: darkgreen;
+  color: #006400;
+  transition: all 1s;
   /*background-color: orange;*/
 }
 
 #logo2{
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
   font-family: 'Amatic SC', cursive;
   font-size: 12vw;
   font-weight: 100;
