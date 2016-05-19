@@ -76,7 +76,7 @@ black(Safe 16 Hex3) cmyk(0%, 0%, 0%, 100%) #000000*/
   bottom: 0;
   z-index: -1;
   border-radius: 50%;
-  opacity: .95;
+  opacity: .9;
   transition: all 1.5s;
 }
 
@@ -85,12 +85,12 @@ black(Safe 16 Hex3) cmyk(0%, 0%, 0%, 100%) #000000*/
 }
 
 #logoContainer a:hover #owlFaceInLogo{
-  font-size: 13vw;
+  font-size: 12.75vw;
   transition: all .1s;
 }
 
 #logoContainer a:hover #moon{
-  box-shadow: 0 0 6vw #fff;
+  box-shadow: 0 0 5vw #fff;
   opacity: 1;
   transition: all .1s;
 }
@@ -118,6 +118,42 @@ black(Safe 16 Hex3) cmyk(0%, 0%, 0%, 100%) #000000*/
 }
 
 /**********************************************          Splash Page End          **********************************************/
+
+
+/**********************************************          404 Page Begin          **********************************************/
+
+#error{
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /*text-align: center;*/
+  background-image: url("/images/404.jpg");
+  background-size: cover;
+  background-repeat:   no-repeat;
+  background-position: 85% bottom;
+  background-color: #E1EBEC;
+}
+
+#error a{
+  color: #006400;
+}
+
+#errorStatus{
+  color: #F91924;
+  font-size: 10vw;
+}
+
+/**********************************************          404 Page End          **********************************************/
+
+
+
+
+
+
 
 /*#text{
   font-family: 'Amatic SC', cursive;
