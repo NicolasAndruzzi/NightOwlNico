@@ -6,9 +6,9 @@ app.config(function($routeProvider) {
       templateUrl: 'views/splash.html',
       controller: 'splashController'
     })
-    .when('/home', {
-      templateUrl: 'views/home.html',
-      controller: 'homeController'
+    .when('/about', {
+      templateUrl: 'views/about.html',
+      controller: 'aboutController'
     })
     .when('/404error', {
       templateUrl: 'views/404error.html',
