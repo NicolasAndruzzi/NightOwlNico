@@ -142,20 +142,20 @@ black(Safe 16 Hex3) cmyk(0%, 0%, 0%, 100%) #000000*/
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /*background-color: green;*/
-  height: 1vw;
-  margin-top: 33vh;
+  background-color: green;
+  height: 21vw;
+  margin-top: 20vh;
 }
 
 #errorStatus{
   color: #F91924;
   font-size: 15vw;
-  /*background-color: blue;*/
+  background-color: blue;
 }
 
 #errorMessage{
   font-size: 3vw;
-  /*background-color: red;*/
+  background-color: red;
 }
 
 /**********************************************          404 Page End          **********************************************/
