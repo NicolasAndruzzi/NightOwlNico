@@ -36,20 +36,20 @@ black(Safe 16 Hex3) cmyk(0%, 0%, 0%, 100%) #000000*/
 }
 
 #logoContainer{
-  display: inline-flex;
+  display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   width: 100vw;
 }
 
-.logoLetter{
+/*.logoLetter{
   font-size: 12vw;
   transition: all .5s;
-}
+}*/
 
 #logo1{
-  display: inline-flex;
+  display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
@@ -61,10 +61,10 @@ black(Safe 16 Hex3) cmyk(0%, 0%, 0%, 100%) #000000*/
   /*background-color: green;*/
 }
 
-.logoLetter:hover{
+/*.logoLetter:hover{
   font-size: 14vw;
   transition: all .15s;
-}
+}*/
 
 #moon{
   width: 32vw;
@@ -72,6 +72,7 @@ black(Safe 16 Hex3) cmyk(0%, 0%, 0%, 100%) #000000*/
   position: absolute;
   margin: auto;
   left: 23.1vw;
+  /*top: 0;*/
   top: 0;
   bottom: 0;
   z-index: -1;
@@ -105,7 +106,7 @@ black(Safe 16 Hex3) cmyk(0%, 0%, 0%, 100%) #000000*/
 }
 
 #logo2{
-  display: inline-flex;
+  display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
@@ -142,52 +143,389 @@ black(Safe 16 Hex3) cmyk(0%, 0%, 0%, 100%) #000000*/
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: green;
+  /*background-color: green;*/
   height: 21vw;
-  margin-top: 20vh;
+  margin-top: 15vh;
 }
 
 #errorStatus{
   color: #F91924;
   font-size: 15vw;
-  background-color: blue;
+  /*background-color: blue;*/
 }
 
 #errorMessage{
   font-size: 3vw;
-  background-color: red;
+  /*background-color: red;*/
 }
 
 /**********************************************          404 Page End          **********************************************/
 
 
-/**********************************************          ? Page End          **********************************************/
+/**********************************************          Main Page Begin          **********************************************/
 
-#aboutNav{
-  position: fixed;
-  left: 0;
-  top: 0;
-  width: 100vw;
-  height: 3vw;
-  background-color: grey;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+* {
+  box-sizing: border-box;
 }
 
-#aboutNav a{
+body {
+  color: #8f8f8f;
+  background: white;
+  font-family: "Oswald", serif;
+  font-weight: 300;
+  -webkit-font-smoothing: antialiased;
+  padding: 0;
+  margin: 0;
+}
+
+a {
   text-decoration: none;
-  color: white;
-  border: 1px solid white;
+}
+
+h1 {
+  font-size: 30px;
+  line-height: 1.8;
+  text-transform: uppercase;
+  font-family: "Oswald", sans-serif;
+}
+
+p {
+  margin-bottom: 20px;
+  font-size: 17px;
+  line-height: 2;
+}
+.row {
   width: 100%;
-  height: 100%;
+  margin: 0 auto;
+  position: relative;
+  padding: 0 2%;
+}
+.content {
+  max-width: 940px;
+  width: 100%;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 50px 2% 50px;
+}
+.main_header .row .content {
+  padding: 0;
+}
+.dark {
+  background:#333;
+}
+
+#hero {
+  width: 100vw;
+  height: 100vh;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  position: relative;
+  background: url("/images/nightSky.jpg") no-repeat center center;
+  /*-webkit-background-size: cover;
+  -moz-background-size: cover;*/
+  background-size: cover;
+  text-align: center;
+  background-color: black;
+}
+
+#hero *{
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+#heroLogoContainer{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+}
+
+.logoLetter{
+  font-size: 12vw;
+  transition: all .5s;
+}
+
+.logoLetterHover{
+  font-size: 14vw;
+  transition: all .15s;
+  cursor: pointer;
+}
+
+.logoLetterAnimate{
+  font-size: 14vw;
+  cursor: pointer;
+  animation-duration: .15s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+  animation-name: wiggle;
+}
+
+#heroLogo1{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+  font-family: 'Amatic SC', cursive;
+  font-size: 12vw;
+  font-weight: 100;
+  color: white;
+  /*background-color: green;*/
+}
+
+#heroMoon{
+  width: 32vw;
+  /*background-color: green;*/
+  position: absolute;
+  margin: auto;
+  left: 23.09vw;
+  top: 0;
+  bottom: 0;
+  border-radius: 50%;
+  transition: all .5s;
+}
+
+.heroMoonNoHover {
+  box-shadow: 0 0 0 white;
+  opacity: .9;
+}
+
+.heroMoonHover {
+  box-shadow: 0 0 5vw white;
+  opacity: 1;
+  cursor: pointer;
+}
+
+#heroOwlFaceInLogo{
+  font-family: 'Permanent Marker', cursive;
+  font-weight: 100;
+  color: darkgreen;
+  transition: all 1s;
+  z-index: 1;
+  /*background-color: orange;*/
+}
+
+.heroOwlFaceInLogoNoHover{
+  font-size: 12vw;
+}
+
+.heroOwlFaceInLogoHover{
+  font-size: 12.75vw;
+  cursor: pointer;
+}
+
+#heroLogo2{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+  font-family: 'Amatic SC', cursive;
+  font-size: 12vw;
+  font-weight: 100;
+  color: white;
+  /*background-color: red;*/
+}
+
+.main_header {
+  position: fixed;
+  top: 0px;
+  max-height: 70px;
+  z-index: 999;
+  width: 100%;
+  padding-top: 17px;
+  background: none;
+  overflow: hidden;
+  transition: all 0.3s;
+  opacity: 0;
+  top: -100px;
+  padding-bottom: 6px;
+  font-family: "Oswald", sans-serif;
+}
+@media only screen and (max-width: 766px) {
+  .main_header {
+    padding-top: 25px;
+  }
+}
+
+.open-nav {
+  max-height: 100vh;
+}
+.open-nav .mobile-toggle {
+  transform: rotate(-90deg);
+}
+
+.sticky {
+  background-color: rgba(255, 255, 255, 0.93);
+  opacity: 1;
+  top: 0px;
+  border-bottom: 1px solid silver;
+}
+
+.logo {
+  width: 50px;
+  font-size: 25px;
+  color: #8f8f8f;
+  text-transform: uppercase;
+  float: left;
+  display: block;
+  margin-top: 0;
+  line-height: 1;
+  margin-bottom: 10px;
+}
+@media only screen and (max-width: 766px) {
+  .logo {
+    float: none;
+  }
+}
+
+nav {
+  float: right;
+  width: 60%;
+}
+@media only screen and (max-width: 766px) {
+  nav {
+    width: 100%;
+  }
+}
+nav ul {
+  list-style: none;
+  overflow: hidden;
+  text-align: right;
+  float: right;
+}
+@media only screen and (max-width: 766px) {
+  nav ul {
+    padding-top: 10px;
+    margin-bottom: 22px;
+    float: left;
+    text-align: center;
+    width: 100%;
+  }
+}
+nav ul li {
+  display: inline-block;
+  margin-left: 35px;
+  line-height: 1.5;
+}
+@media only screen and (max-width: 766px) {
+  nav ul li {
+    width: 100%;
+    padding: 7px 0;
+    margin: 0;
+  }
+}
+nav ul a {
+  color: #888888;
+  text-transform: uppercase;
+  font-size: 12px;
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid transparent;
+  transition: all 500ms linear;
+}
+nav ul a.active {
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+  transition: all 500ms 100ms linear;
+}
+.mobile-toggle {
+  display: none;
+  cursor: pointer;
+  font-size: 20px;
+  position: absolute;
+  right: 22px;
+  top: 0;
+  width: 30px;
+  transition: all 200ms ease-in;
+}
+@media only screen and (max-width: 766px) {
+  .mobile-toggle {
+    display: block;
+  }
+}
+.mobile-toggle span {
+  width: 30px;
+  height: 4px;
+  margin-bottom: 6px;
+  border-radius: 1000px;
+  background: #8f8f8f;
+  display: block;
+}
+.mouse {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 2vh;
+  position: absolute;
+  left: 25vw;
+}
+.mouse i{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50vw;
+  height: auto;
+  /*background-color: yellow;*/
+  animation-duration: 2s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+  animation-name: scroll;
+}
+
+.scrollup {
+  color: rgba(0,0,0,0.75);
+  border-radius: 50%;
+  /*background-color: darkgreen;*/
+  position: fixed;
+  display: none;
+  bottom: 2vh;
+  right: 2vw;
+}
+
+@keyframes scroll {
+  0% {
+    opacity: 0;
+    transform: translateY(0);
+  }
+
+  50% {
+    opacity: .25;
+    transform: translateY(20px);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+}
+
+@keyframes wiggle {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  25% {
+    transform: rotate(5deg);
+  }
+
+  50% {
+    transform: rotate(0deg);
+  }
+
+  75% {
+    transform: rotate(-5deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
 }
 
 
-/**********************************************          ? Page End          **********************************************/
+/**********************************************          Main Page End          **********************************************/
 
 
 
