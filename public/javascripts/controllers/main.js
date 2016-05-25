@@ -30,11 +30,15 @@ app.controller("mainController", function($scope){
 
     if (playing == false) {
       (player).play();
+      $( "#heroMoon" ).addClass( "moonTuneAnimation" );
+      $( "#heroOwlFaceInLogo" ).addClass( "owlFaceTuneAnimation" );
       playing = true;
       console.log("playing");
     }
     else {
       (player).pause();
+      $( "#heroMoon" ).removeClass( "moonTuneAnimation" );
+      $( "#heroOwlFaceInLogo" ).removeClass( "owlFaceTuneAnimation" );
       playing = false;
       console.log("notPlaying");
     }
@@ -46,11 +50,13 @@ app.controller("mainController", function($scope){
 
     if (playing == false) {
       (player).play();
+      $( "#heroMoon" ).addClass( "moonTuneAnimation" );
       playing = true;
       console.log("playing");
     }
     else {
       (player).pause();
+      $( "#heroMoon" ).removeClass( "moonTuneAnimation" );
       playing = false;
       console.log("notPlaying");
     }
@@ -112,9 +118,10 @@ app.controller("mainController", function($scope){
       }, 500);
       event.preventDefault();
   });
+
   /* Scroll-to-Top Button */
   $(window).scroll(function () {
-      if ($(this).scrollTop() > $(window).height()*.9) {
+      if ($(this).scrollTop() > $(window).height()*.65) {
           $('.scrollup').fadeIn();
       } else {
           $('.scrollup').fadeOut();
@@ -124,12 +131,22 @@ app.controller("mainController", function($scope){
   $('.scrollup').click(function () {
       $("html, body").animate({
           scrollTop: 0
-      }, 600);
+      }, 750);
       return false;
   });
+
+  /* Scroll-Down Button */
+  $(downPointerIcon).click(function () {
+      $("html, body").animate({
+          scrollTop: $(window).height()
+      }, 1000);
+      return false;
+  });
+
   /* WORK IN PROGRESS
      NAVIGATION ACTIVE STATE IN SECTION AREA
   */
+
   var sections = $('section'), nav = $('nav'), nav_height = nav.outerHeight();
 
   $(window).on('scroll', function () {

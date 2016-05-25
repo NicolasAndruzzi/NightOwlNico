@@ -12,114 +12,6 @@ grey(16) cmyk(0%, 0%, 0%, 50%) #808080
 dimgrey cmyk(0%, 0%, 0%, 59%) #696969
 black(Safe 16 Hex3) cmyk(0%, 0%, 0%, 100%) #000000*/
 
-/**********************************************          Splash Page Begin          **********************************************/
-
-#splash{
-  position: fixed;
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  /*text-align: center;*/
-  /*background-image: linear-gradient(#D9D9D9, white, white);*/
-  /*background-image: linear-gradient(gainsboro, white);*/
-  /*background-image: url("https://blackbeastsandboogeymen.files.wordpress.com/2016/02/dark-forest.jpg");*/
-  /*background-image: url("http://wallpaperbeta.com/wallpaper_gray/gray_germany_bavaria_mountains_night_sky_star_way_hd-wallpaper-390076.jpg");*/
-  /*background-image: url("https://janaralyspeaking.files.wordpress.com/2013/08/mongolia-night-sky-tent-milkyway-thegeneralist2.jpg");*/
-  /*background-image: url("https://staticdelivery.nexusmods.com/mods/101/images/16617-5-1217883962.jpg");*/
-  background-image: url("/images/nightSky.jpg");
-  background-size: cover;
-  background-repeat:   no-repeat;
-  background-position: center center;
-  background-color: black;
-}
-
-#logoContainer{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  width: 100vw;
-}
-
-/*.logoLetter{
-  font-size: 12vw;
-  transition: all .5s;
-}*/
-
-#logo1{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  flex-grow: 1;
-  font-family: 'Amatic SC', cursive;
-  font-size: 12vw;
-  font-weight: 100;
-  color: white;
-  /*background-color: green;*/
-}
-
-/*.logoLetter:hover{
-  font-size: 14vw;
-  transition: all .15s;
-}*/
-
-#moon{
-  width: 32vw;
-  /*background-color: green;*/
-  position: absolute;
-  margin: auto;
-  left: 23.1vw;
-  /*top: 0;*/
-  top: 0;
-  bottom: 0;
-  z-index: -1;
-  border-radius: 50%;
-  opacity: .9;
-  transition: all 1.5s;
-}
-
-#logoContainer a{
-  text-decoration: none;
-}
-
-#logoContainer a:hover #owlFaceInLogo{
-  font-size: 12.75vw;
-  transition: all .1s;
-}
-
-#logoContainer a:hover #moon{
-  box-shadow: 0 0 5vw white;
-  opacity: 1;
-  transition: all .1s;
-}
-
-#owlFaceInLogo{
-  font-family: 'Permanent Marker', cursive;
-  font-size: 12vw;
-  font-weight: 100;
-  color: darkgreen;
-  transition: all 1s;
-  /*background-color: orange;*/
-}
-
-#logo2{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  flex-grow: 1;
-  font-family: 'Amatic SC', cursive;
-  font-size: 12vw;
-  font-weight: 100;
-  color: white;
-  /*background-color: red;*/
-}
-
-/**********************************************          Splash Page End          **********************************************/
-
 
 /**********************************************          404 Page Begin          **********************************************/
 
@@ -163,56 +55,6 @@ black(Safe 16 Hex3) cmyk(0%, 0%, 0%, 100%) #000000*/
 
 
 /**********************************************          Main Page Begin          **********************************************/
-
-* {
-  box-sizing: border-box;
-}
-
-body {
-  color: #8f8f8f;
-  background: white;
-  font-family: "Oswald", serif;
-  font-weight: 300;
-  -webkit-font-smoothing: antialiased;
-  padding: 0;
-  margin: 0;
-}
-
-a {
-  text-decoration: none;
-}
-
-h1 {
-  font-size: 30px;
-  line-height: 1.8;
-  text-transform: uppercase;
-  font-family: "Oswald", sans-serif;
-}
-
-p {
-  margin-bottom: 20px;
-  font-size: 17px;
-  line-height: 2;
-}
-.row {
-  width: 100%;
-  margin: 0 auto;
-  position: relative;
-  padding: 0 2%;
-}
-.content {
-  max-width: 940px;
-  width: 100%;
-  min-height: 100vh;
-  margin: 0 auto;
-  padding: 50px 2% 50px;
-}
-.main_header .row .content {
-  padding: 0;
-}
-.dark {
-  background:#333;
-}
 
 #hero {
   width: 100vw;
@@ -299,6 +141,13 @@ p {
   cursor: pointer;
 }
 
+.moonTuneAnimation{
+  animation-duration: .75s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+  animation-name: moonTuneA;
+}
+
 #heroOwlFaceInLogo{
   font-family: 'Permanent Marker', cursive;
   font-weight: 100;
@@ -317,6 +166,14 @@ p {
   cursor: pointer;
 }
 
+.owlFaceTuneAnimation{
+  animation-duration: 4s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+  animation-name: owlFaceTuneA;
+}
+
+
 #heroLogo2{
   display: flex;
   flex-direction: row;
@@ -329,6 +186,58 @@ p {
   color: white;
   /*background-color: red;*/
 }
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: #8f8f8f;
+  background: white;
+  font-family: "Oswald", serif;
+  font-weight: 300;
+  -webkit-font-smoothing: antialiased;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 30px;
+  line-height: 1.8;
+  text-transform: uppercase;
+  font-family: "Oswald", sans-serif;
+}
+
+p {
+  margin-bottom: 20px;
+  font-size: 17px;
+  line-height: 2;
+}
+
+.row {
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  padding: 0 2%;
+}
+.content {
+  max-width: 940px;
+  width: 100%;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 50px 2% 50px;
+}
+.main_header .row .content {
+  padding: 0;
+}
+.dark {
+  background:#333;
+}
+
 
 .main_header {
   position: fixed;
@@ -454,22 +363,22 @@ nav ul a.active {
   background: #8f8f8f;
   display: block;
 }
-.mouse {
+.downPointer {
   display: flex;
   align-items: center;
   justify-content: center;
   bottom: 2vh;
   position: absolute;
-  left: 25vw;
+  left: 42.5vw;
+  /*background-color: red;*/
 }
-.mouse i{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 50vw;
+.downPointer i{
+  width: 15vw;
   height: auto;
   /*background-color: yellow;*/
-  animation-duration: 2s;
+  /*text-decoration: none;*/
+  color: white;
+  animation-duration: 1.5s;
   animation-fill-mode: both;
   animation-iteration-count: infinite;
   animation-name: scroll;
@@ -521,6 +430,57 @@ nav ul a.active {
 
   100% {
     transform: rotate(0deg);
+  }
+}
+
+@keyframes moonTuneA {
+  0% {
+    opacity: 1;
+    box-shadow: 0 0 5vw white;
+  }
+
+  50% {
+    opacity: .5;
+    box-shadow: 0 0 1vw white;
+  }
+
+  100% {
+    opacity: 1;
+    box-shadow: 0 0 5vw white;
+  }
+}
+
+@keyframes owlFaceTuneA {
+  0% {
+    color: darkgreen;
+  }
+
+  14% {
+    color: darkblue;
+  }
+
+  28% {
+    color: darkgoldenrod;
+  }
+
+  42% {
+    color: darkslategrey);
+  }
+
+  56% {
+    color: darkmagenta;
+  }
+
+  70% {
+    color: darkorange;
+  }
+
+  84% {
+    color: darkred;
+  }
+
+  100% {
+    color: darkgreen;
   }
 }
 
