@@ -208,8 +208,9 @@ a {
 h1 {
   font-size: 30px;
   line-height: 1.8;
-  text-transform: uppercase;
-  font-family: "Oswald", sans-serif;
+  /*text-transform: uppercase;*/
+  font-family: 'Amatic SC', cursive;
+  /*font-family: "Oswald", sans-serif;*/
 }
 
 p {
@@ -218,14 +219,15 @@ p {
   line-height: 2;
 }
 
-.row {
-  width: 100%;
+/*.row {
+  width: 100vw;
   margin: 0 auto;
   position: relative;
   padding: 0 2%;
-}
+}*/
+
 .content {
-  max-width: 940px;
+  max-width: 90vw;
   width: 100%;
   min-height: 100vh;
   margin: 0 auto;
@@ -242,18 +244,23 @@ p {
 .main_header {
   position: fixed;
   top: 0px;
-  max-height: 70px;
+  left: 0;
+  width: 100vw;
+  height: 10vh;
   z-index: 999;
-  width: 100%;
-  padding-top: 17px;
+  /*padding-top: 17px;*/
   background: none;
   overflow: hidden;
   transition: all 0.3s;
   opacity: 0;
-  top: -100px;
-  padding-bottom: 6px;
-  font-family: "Oswald", sans-serif;
+  /*top: -100px;*/
+  /*padding-bottom: 6px;*/
+  font-family: 'Amatic SC', cursive;
+  display: flex;
+  align-items: center;
+  /*justify-content: center;*/
 }
+
 @media only screen and (max-width: 766px) {
   .main_header {
     padding-top: 25px;
@@ -277,13 +284,13 @@ p {
 .logo {
   width: 50px;
   font-size: 25px;
-  color: #8f8f8f;
-  text-transform: uppercase;
+  color: black;
   float: left;
   display: block;
   margin-top: 0;
   line-height: 1;
   margin-bottom: 10px;
+  background-color: red;
 }
 @media only screen and (max-width: 766px) {
   .logo {
@@ -293,7 +300,8 @@ p {
 
 nav {
   float: right;
-  width: 60%;
+  background-color: orange;
+  /*width: 60%;*/
 }
 @media only screen and (max-width: 766px) {
   nav {
@@ -372,7 +380,7 @@ nav ul a.active {
   left: 42.5vw;
   /*background-color: red;*/
 }
-.downPointer i{
+.downPointer i {
   width: 15vw;
   height: auto;
   /*background-color: yellow;*/
@@ -384,6 +392,10 @@ nav ul a.active {
   animation-name: scroll;
 }
 
+#downPointerIcon:hover {
+  cursor: pointer;
+}
+
 .scrollup {
   color: rgba(0,0,0,0.75);
   border-radius: 50%;
@@ -392,6 +404,10 @@ nav ul a.active {
   display: none;
   bottom: 2vh;
   right: 2vw;
+}
+
+.scrollup:hover {
+  cursor: pointer;
 }
 
 @keyframes scroll {

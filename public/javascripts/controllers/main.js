@@ -51,12 +51,14 @@ app.controller("mainController", function($scope){
     if (playing == false) {
       (player).play();
       $( "#heroMoon" ).addClass( "moonTuneAnimation" );
+      $( "#heroOwlFaceInLogo" ).addClass( "owlFaceTuneAnimation" );
       playing = true;
       console.log("playing");
     }
     else {
       (player).pause();
       $( "#heroMoon" ).removeClass( "moonTuneAnimation" );
+      $( "#heroOwlFaceInLogo" ).removeClass( "owlFaceTuneAnimation" );
       playing = false;
       console.log("notPlaying");
     }
