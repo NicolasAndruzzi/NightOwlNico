@@ -113,35 +113,35 @@ black(Safe 16 Hex3) cmyk(0%, 0%, 0%, 100%) #000000*/
   animation-name: LogoLetterTuneA;
 }
 
-.L1{
+.L1d{
   animation-delay: .1s;
 }
 
-.L2{
+.L2d{
   animation-delay: .2s;
 }
 
-.L3{
+.L3d{
   animation-delay: .3s;
 }
 
-.L4{
+.L4d{
   animation-delay: .4s;
 }
 
-.L5{
+.L5d{
   animation-delay: .5s;
 }
 
-.L6{
+.L6d{
   animation-delay: .6s;
 }
 
-.L7{
+.L7d{
   animation-delay: .7s;
 }
 
-.L8{
+.L8d{
   animation-delay: .8s;
 }
 
@@ -548,6 +548,7 @@ nav ul a.active {
   }
 }
 
+/*(Translation Values Calculated From Sin Wave Function)*/
 @keyframes LogoLetterTuneA {
   0% {
     transform: translateY(0vh);

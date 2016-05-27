@@ -54,6 +54,14 @@ app.controller("mainController", function($scope){
       $( "#heroMoon" ).addClass( "moonTuneAnimation" );
       $( "#heroOwlFaceInLogo" ).addClass( "owlFaceTuneAnimation" );
       $( ".logoLetter" ).addClass( "logoLetterTuneAnimation" );
+      $( ".L1" ).addClass( "L1d" );
+      $( ".L2" ).addClass( "L2d" );
+      $( ".L3" ).addClass( "L3d" );
+      $( ".L4" ).addClass( "L4d" );
+      $( ".L5" ).addClass( "L5d" );
+      $( ".L6" ).addClass( "L6d" );
+      $( ".L7" ).addClass( "L7d" );
+      $( ".L8" ).addClass( "L8d" );
       playing = true;
       console.log("playing");
     }
@@ -62,6 +70,14 @@ app.controller("mainController", function($scope){
       $( "#heroMoon" ).removeClass( "moonTuneAnimation" );
       $( "#heroOwlFaceInLogo" ).removeClass( "owlFaceTuneAnimation" );
       $( ".logoLetter" ).removeClass( "logoLetterTuneAnimation" );
+      $( ".L1" ).removeClass( "L1d" );
+      $( ".L2" ).removeClass( "L2d" );
+      $( ".L3" ).removeClass( "L3d" );
+      $( ".L4" ).removeClass( "L4d" );
+      $( ".L5" ).removeClass( "L5d" );
+      $( ".L6" ).removeClass( "L6d" );
+      $( ".L7" ).removeClass( "L7d" );
+      $( ".L8" ).removeClass( "L8d" );
       playing = false;
       console.log("notPlaying");
     }
@@ -76,6 +92,14 @@ app.controller("mainController", function($scope){
       $( "#heroMoon" ).addClass( "moonTuneAnimation" );
       $( "#heroOwlFaceInLogo" ).addClass( "owlFaceTuneAnimation" );
       $( ".logoLetter" ).addClass( "logoLetterTuneAnimation" );
+      $( ".L1" ).addClass( "L1d" );
+      $( ".L2" ).addClass( "L2d" );
+      $( ".L3" ).addClass( "L3d" );
+      $( ".L4" ).addClass( "L4d" );
+      $( ".L5" ).addClass( "L5d" );
+      $( ".L6" ).addClass( "L6d" );
+      $( ".L7" ).addClass( "L7d" );
+      $( ".L8" ).addClass( "L8d" );
       playing = true;
       console.log("playing");
     }
@@ -84,6 +108,14 @@ app.controller("mainController", function($scope){
       $( "#heroMoon" ).removeClass( "moonTuneAnimation" );
       $( "#heroOwlFaceInLogo" ).removeClass( "owlFaceTuneAnimation" );
       $( ".logoLetter" ).removeClass( "logoLetterTuneAnimation" );
+      $( ".L1" ).removeClass( "L1d" );
+      $( ".L2" ).removeClass( "L2d" );
+      $( ".L3" ).removeClass( "L3d" );
+      $( ".L4" ).removeClass( "L4d" );
+      $( ".L5" ).removeClass( "L5d" );
+      $( ".L6" ).removeClass( "L6d" );
+      $( ".L7" ).removeClass( "L7d" );
+      $( ".L8" ).removeClass( "L8d" );
       playing = false;
       console.log("notPlaying");
     }
