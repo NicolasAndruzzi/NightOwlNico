@@ -105,6 +105,47 @@ black(Safe 16 Hex3) cmyk(0%, 0%, 0%, 100%) #000000*/
   animation-name: wiggle;
 }
 
+.logoLetterTuneAnimation{
+  animation-duration: 1.075s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-name: LogoLetterTuneA;
+}
+
+.L1{
+  animation-delay: .1s;
+}
+
+.L2{
+  animation-delay: .2s;
+}
+
+.L3{
+  animation-delay: .3s;
+}
+
+.L4{
+  animation-delay: .4s;
+}
+
+.L5{
+  animation-delay: .5s;
+}
+
+.L6{
+  animation-delay: .6s;
+}
+
+.L7{
+  animation-delay: .7s;
+}
+
+.L8{
+  animation-delay: .8s;
+}
+
+
 #heroLogo1{
   display: flex;
   flex-direction: row;
@@ -142,7 +183,7 @@ black(Safe 16 Hex3) cmyk(0%, 0%, 0%, 100%) #000000*/
 }
 
 .moonTuneAnimation{
-  animation-duration: .75s;
+  animation-duration: 1.075s;
   animation-fill-mode: both;
   animation-iteration-count: infinite;
   animation-name: moonTuneA;
@@ -399,11 +440,18 @@ nav ul a.active {
 .scrollup {
   color: rgba(0,0,0,0.75);
   border-radius: 50%;
+  width: 3vw;
+  height: 3vw;
   /*background-color: darkgreen;*/
   position: fixed;
   display: none;
-  bottom: 2vh;
-  right: 2vw;
+  bottom: 1vh;
+  right: 1vw;
+  text-align: center;
+}
+
+.scrollup img {
+  width: 3vw;
 }
 
 .scrollup:hover {
@@ -499,6 +547,93 @@ nav ul a.active {
     color: darkgreen;
   }
 }
+
+@keyframes LogoLetterTuneA {
+  0% {
+    transform: translateY(0vh);
+  }
+
+  5% {
+    transform: translateY(3.09vh);
+  }
+
+  10% {
+    transform: translateY(5.88vh);
+  }
+
+  15% {
+    transform: translateY(8.09vh);
+  }
+
+  20% {
+    transform: translateY(9.51vh);
+  }
+
+  25% {
+    transform: translateY(10vh);
+  }
+
+  30% {
+    transform: translateY(9.51vh);
+  }
+
+  35% {
+    transform: translateY(8.09vh);
+  }
+
+  40% {
+    transform: translateY(5.88vh);
+  }
+
+  45% {
+    transform: translateY(3.09vh);
+  }
+
+  50% {
+    transform: translateY(0vh);
+  }
+
+  55% {
+    transform: translateY(-3.09vh);
+  }
+
+  60% {
+    transform: translateY(-5.88vh);
+  }
+
+  65% {
+    transform: translateY(-8.09vh);
+  }
+
+  70% {
+    transform: translateY(-9.51vh);
+  }
+
+  75% {
+    transform: translateY(-10vh);
+  }
+
+  80% {
+    transform: translateY(-9.51vh);
+  }
+
+  85% {
+    transform: translateY(-8.09vh);
+  }
+
+  90% {
+    transform: translateY(-5.88vh);
+  }
+
+  95% {
+    transform: translateY(-3.09vh);
+  }
+
+  100% {
+    transform: translateY(0vh);
+  }
+}
+
 
 
 /**********************************************          Main Page End          **********************************************/

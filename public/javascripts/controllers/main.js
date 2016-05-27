@@ -1,5 +1,26 @@
 app.controller("mainController", function($scope){
-  console.log("mainController");
+  console.log("---------------------------------------");
+  console.log("███╗   ██╗██╗ ██████╗ ██╗  ██╗████████╗");
+  console.log("████╗  ██║██║██╔════╝ ██║  ██║╚══██╔══╝");
+  console.log("██╔██╗ ██║██║██║  ███╗███████║   ██║");
+  console.log("██║╚██╗██║██║██║   ██║██╔══██║   ██║");
+  console.log("██║ ╚████║██║╚██████╔╝██║  ██║   ██║");
+  console.log("╚═╝  ╚═══╝╚═╝ ╚═════╝ ╚═╝  ╚═╝   ╚═╝");
+  console.log("");
+  console.log(" ██████╗ ██╗    ██╗██╗");
+  console.log("██╔═══██╗██║    ██║██║");
+  console.log("██║   ██║██║ █╗ ██║██║");
+  console.log("██║   ██║██║███╗██║██║");
+  console.log("╚██████╔╝╚███╔███╔╝███████╗");
+  console.log(" ╚═════╝  ╚══╝╚══╝ ╚══════╝");
+  console.log("");
+  console.log("███╗   ██╗██╗ ██████╗ ██████╗");
+  console.log("████╗  ██║██║██╔════╝██╔═══██╗");
+  console.log("██╔██╗ ██║██║██║     ██║   ██║");
+  console.log("██║╚██╗██║██║██║     ██║   ██║");
+  console.log("██║ ╚████║██║╚██████╗╚██████╔╝");
+  console.log("╚═╝  ╚═══╝╚═╝ ╚═════╝ ╚═════╝");
+  console.log("---------------------------------------");
 
   // Moon Hover
   $(heroMoon).hover(
@@ -32,6 +53,7 @@ app.controller("mainController", function($scope){
       (player).play();
       $( "#heroMoon" ).addClass( "moonTuneAnimation" );
       $( "#heroOwlFaceInLogo" ).addClass( "owlFaceTuneAnimation" );
+      $( ".logoLetter" ).addClass( "logoLetterTuneAnimation" );
       playing = true;
       console.log("playing");
     }
@@ -39,6 +61,7 @@ app.controller("mainController", function($scope){
       (player).pause();
       $( "#heroMoon" ).removeClass( "moonTuneAnimation" );
       $( "#heroOwlFaceInLogo" ).removeClass( "owlFaceTuneAnimation" );
+      $( ".logoLetter" ).removeClass( "logoLetterTuneAnimation" );
       playing = false;
       console.log("notPlaying");
     }
@@ -52,6 +75,7 @@ app.controller("mainController", function($scope){
       (player).play();
       $( "#heroMoon" ).addClass( "moonTuneAnimation" );
       $( "#heroOwlFaceInLogo" ).addClass( "owlFaceTuneAnimation" );
+      $( ".logoLetter" ).addClass( "logoLetterTuneAnimation" );
       playing = true;
       console.log("playing");
     }
@@ -59,6 +83,7 @@ app.controller("mainController", function($scope){
       (player).pause();
       $( "#heroMoon" ).removeClass( "moonTuneAnimation" );
       $( "#heroOwlFaceInLogo" ).removeClass( "owlFaceTuneAnimation" );
+      $( ".logoLetter" ).removeClass( "logoLetterTuneAnimation" );
       playing = false;
       console.log("notPlaying");
     }
