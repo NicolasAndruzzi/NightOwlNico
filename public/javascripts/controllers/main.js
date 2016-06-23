@@ -153,10 +153,10 @@ app.controller("mainController", function($scope){
   $(window).scroll(function() {
 
       if ($(window).scrollTop() > $(window).height()*.9) {
-          $('.main_header').addClass('sticky');
+          $('.mainHeader').addClass('sticky');
           // $('.main_header').fadeIn(3000);
       } else {
-          $('.main_header').removeClass('sticky');
+          $('.mainHeader').removeClass('sticky');
           // $('main_header').fadeOut(3000);
       }
   });
