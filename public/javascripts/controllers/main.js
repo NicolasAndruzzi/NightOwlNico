@@ -22,6 +22,9 @@ app.controller("mainController", function($scope){
   console.log("╚═╝  ╚═══╝╚═╝ ╚═════╝ ╚═════╝");
   console.log("---------------------------------------");
 
+  // Immediately Hide the Navbar
+  $('.mainHeader').hide();
+
   // Moon Hover
   $(heroMoon).hover(
     function() {
@@ -85,7 +88,7 @@ app.controller("mainController", function($scope){
   });
 
   $(heroOwlFaceInLogo).click(function() {
-    console.log("clicked");
+    // console.log("clicked");
 
     if (playing == false) {
       (player).play();
@@ -117,7 +120,7 @@ app.controller("mainController", function($scope){
       $( ".L7" ).removeClass( "L7d" );
       $( ".L8" ).removeClass( "L8d" );
       playing = false;
-      console.log("notPlaying");
+      // console.log("notPlaying");
     }
 
   });
@@ -153,11 +156,12 @@ app.controller("mainController", function($scope){
   $(window).scroll(function() {
 
       if ($(window).scrollTop() > $(window).height()*.9) {
-          $('.mainHeader').addClass('sticky');
-          // $('.main_header').fadeIn(3000);
-      } else {
-          $('.mainHeader').removeClass('sticky');
-          // $('main_header').fadeOut(3000);
+          // $('.mainHeader').addClass('sticky');
+          $('.mainHeader').fadeIn(200);
+      }
+      else {
+          // $('.mainHeader').removeClass('sticky');
+          $('.mainHeader').fadeOut(200);
       }
   });
 
