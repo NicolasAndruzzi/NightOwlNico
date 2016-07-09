@@ -157,11 +157,11 @@ app.controller("mainController", function($scope){
 
       if ($(window).scrollTop() > $(window).height()*.9) {
           // $('.mainHeader').addClass('sticky');
-          $('.mainHeader').fadeIn(200);
+          $('.mainHeader').fadeIn(250);
       }
       else {
           // $('.mainHeader').removeClass('sticky');
-          $('.mainHeader').fadeOut(200);
+          $('.mainHeader').fadeOut(250);
       }
   });
 

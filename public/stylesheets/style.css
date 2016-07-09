@@ -93,11 +93,11 @@ top: 0px;
   /*padding-bottom: 6px;*/
   /*font-family: 'Amatic SC', cursive;*/
   background-color: white;
-  opacity: .9;
+  opacity: .95;
   /*display: flex;*/
   align-items: center;
   /*justify-content: space-between;*/
-  border-bottom: 1px solid whitesmoke;
+  /*border-bottom: 1px solid whitesmoke;*/
 }
 
 #headerLogoContainer{
@@ -111,7 +111,7 @@ top: 0px;
   margin-left: 1.5vw;
   width: 30vw;
   /*margin-right: 1.5vw;*/
-  transition: all .5s;
+  /*transition: all .5s;*/
   height: 100%;
   /*font-size: 2.5vw;*/
 }
@@ -126,11 +126,40 @@ top: 0px;
 #headerHeroLogo1 {
   font-family: 'Amatic SC', cursive;
   font-weight: 100;
+  color: #333333;
+}
+
+#headerOwlFaceInLogo{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Permanent Marker', cursive;
+  font-weight: 100;
+  color: #005500;
+  /*transition: all 0.5s;*/
+  /*font-size: 3vw;*/
+  /*transition: all 1s;*/
+  /*z-index: 1;*/
+  /*background-color: orange;*/
 }
 
 #headerHeroLogo2 {
   font-family: 'Amatic SC', cursive;
   font-weight: 100;
+  color: #333333;
+}
+
+#headerLogoContainer:hover #headerHeroLogo1 {
+  color: black;
+  font-weight: 900;
+  /*transition: all 0.s;*/
+}
+
+#headerLogoContainer:hover #headerHeroLogo2 {
+  color: black;
+  font-weight: 900;
+  /*transition: all 0.s;*/
+  /*font-size: 3.5vw;*/
 }
 
 #headerLogoLetter {
@@ -166,20 +195,6 @@ top: 0px;
   background-color: green;
 }*/
 
-#headerOwlFaceInLogo{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: 'Permanent Marker', cursive;
-  font-weight: 100;
-  color: #005500;
-  /*transition: all 0.5s;*/
-  /*font-size: 3vw;*/
-  /*transition: all 1s;*/
-  /*z-index: 1;*/
-  /*background-color: orange;*/
-}
-
 /*#headerLogo2{
   display: flex;
   flex-direction: row;
@@ -202,7 +217,7 @@ top: 0px;
   /*margin-right: 1.5vw;*/
   margin: 0 auto;
   /*background-color: blue;*/
-  width: 60vw;
+  width: 50vw;
   /*font-size: 2vw;*/
   /*height: 10vh;*/
   /*font-family: 'Amatic SC', cursive;*/
@@ -223,29 +238,30 @@ top: 0px;
   font-weight: 100;
   /*color: black;*/
   color: #333333;
-  height: 5vh;
+  height: 1vh;
   width: 100%;
-  font-size: 1.5vw;
+  font-size: 1.75vw;
   /*margin: 0 auto;*/
   /*overflow: hidden;*/
   /*text-align: right;*/
   /*float: right;*/
-  transition: all 1s;
+  /*transition: all 1s;*/
 }
 
 #navigationMenu div:hover {
   cursor: pointer;
-  letter-spacing: .5vw;
+  letter-spacing: .25vw;
   font-weight: 900;
-  font-size: 3vw;
-  height: 7.5vh;
-  border-left: 1px solid white;
-  border-right: 1px solid white;
+  font-size: 2.25vw;
+  color: #000000;
+  height: 5vh;
+  border-left: 3px solid #005500;
+  border-right: 3px solid #005500;
   /*color: white;*/
   /*background-color: dimgrey;*/
   /*background-color: #555555;*/
   /*border-radius: 15%;*/
-  transition: all 0.5s;
+  /*transition: all 0.5s;*/
 }
 
 /*#navigationMenu ul li {
