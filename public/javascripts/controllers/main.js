@@ -155,7 +155,7 @@ app.controller("mainController", function($scope){
   // Sticky Header
   $(window).scroll(function() {
 
-      if ($(window).scrollTop() > $(window).height()*.9) {
+      if ($(window).scrollTop() > $(window).height()*.925) {
           // $('.mainHeader').addClass('sticky');
           $('.mainHeader').fadeIn(250);
       }

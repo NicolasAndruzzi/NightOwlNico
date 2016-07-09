@@ -98,6 +98,10 @@ top: 0px;
   align-items: center;
   /*justify-content: space-between;*/
   /*border-bottom: 1px solid whitesmoke;*/
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  box-shadow: 0 0 50px #333;
 }
 
 #headerLogoContainer{
@@ -229,8 +233,8 @@ top: 0px;
   /*flex-direction: row;*/
   align-items: center;
   justify-content: center;
-  border-left: 1px solid gainsboro;
-  border-right: 1px solid gainsboro;
+  border-left: 1px solid #dddddd;
+  border-right: 1px solid #dddddd;
   font-family: 'Amatic SC', cursive;
   /*font-size: 2.5vw;*/
   /*font-family: 'Josefin Sans', sans-serif;*/
@@ -262,6 +266,10 @@ top: 0px;
   /*background-color: #555555;*/
   /*border-radius: 15%;*/
   /*transition: all 0.5s;*/
+}
+
+#navigationMenu div:active {
+  color: #005500;
 }
 
 /*#navigationMenu ul li {
@@ -592,7 +600,11 @@ padding: 0;
 }*/
 
 .dark {
-  background:#333;
+  background-color: #111111;
+}
+
+.light {
+  background-color: #eeeeee;
 }
 
 /**********************************************          About Section Begin          **********************************************/
