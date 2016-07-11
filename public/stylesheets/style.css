@@ -268,7 +268,7 @@ top: 0px;
   height: 1.5vh;
   font-size: 2vw;
 }
-
+     /*Keep .active below .notActive  || Change the main.js to remove .notActive while .active is on*/
 .active {
   letter-spacing: .25vw;
   font-weight: 900;

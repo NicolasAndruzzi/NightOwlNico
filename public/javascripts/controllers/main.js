@@ -144,7 +144,7 @@ app.controller("mainController", function($scope){
     $( this ).addClass( "logoLetterAnimate" );
   });
 
-  /* Scroll-Down Button */
+  // Scroll-Down Button
   $(downPointerIcon).click(function () {
     $("html, body").animate({
       scrollTop: $(window).height()
@@ -182,7 +182,7 @@ app.controller("mainController", function($scope){
   // });
   //
 
-  /* Scroll-to-Top Button */
+  // Scroll-to-Top Button
   $(window).scroll(function () {
       if ($(this).scrollTop() > $(window).height()*.65) {
           $('.scrollup').fadeIn();
@@ -202,17 +202,20 @@ app.controller("mainController", function($scope){
      NAVIGATION ACTIVE STATE IN SECTION AREA
   */
 
-  // // navigation scroll
-  // $('nav a').click(function(event) {
-  //     var id = $(this).attr("href");
-  //     var offset = 0;
-  //     var target = $(id).offset().top - offset;
-  //     $('html, body').animate({
-  //         scrollTop: target
-  //     }, 500);
-  //     event.preventDefault();
-  // });
+  // Navigation Click Sends to Section
+  $('.navOption').click(function() {
+      var id = $(this).attr("id");
+      console.log($(this).attr('id'));
+      // var offset = 0;
+      var target = $('#'+id).offset().top;
+      $('html, body').animate({
+          scrollTop: target
+      }, 500);
+      // event.preventDefault();
+  });
 
+
+  // Make Navigation Options Active
   $(window).scroll(function() {
     var currentPosition = $(this).scrollTop();
 
@@ -221,8 +224,8 @@ app.controller("mainController", function($scope){
       var bottom = top + $(this).outerHeight();
 
       if (currentPosition >= top && currentPosition <= bottom) {
-        $('#navigationMenu').find('div.navOption').removeClass('active');
-        $('#navigationMenu').find('div.' + $(this).attr('id')).addClass('active');
+        $('#navigationMenu').find('.navOption').removeClass('active');
+        $('#navigationMenu').find('#' + $(this).attr('id')).addClass('active');
       }
     });
   });
