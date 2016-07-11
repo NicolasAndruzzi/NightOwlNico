@@ -101,7 +101,7 @@ top: 0px;
   -moz-user-select: none;
   -webkit-user-select: none;
   -ms-user-select: none;
-  box-shadow: 0 0 7.5vh #444;
+  box-shadow: 0 0 7.5vh #444444;
 }
 
 #headerLogoContainer{
@@ -130,7 +130,7 @@ top: 0px;
 #headerHeroLogo1 {
   font-family: 'Amatic SC', cursive;
   font-weight: 100;
-  color: #333333;
+  color: #000000;
 }
 
 #headerOwlFaceInLogo{
@@ -150,7 +150,7 @@ top: 0px;
 #headerHeroLogo2 {
   font-family: 'Amatic SC', cursive;
   font-weight: 100;
-  color: #333333;
+  color: #000000;
 }
 
 #headerLogoContainer:hover #headerHeroLogo1 {
@@ -219,9 +219,11 @@ top: 0px;
   justify-content: center;
   /*margin-left: 1.5vw;*/
   /*margin-right: 1.5vw;*/
-  margin: 0 auto;
+  /*margin: 0 auto;*/
+  margin-right: 4.5vw;
+  margin-left: auto;
   /*background-color: blue;*/
-  width: 50vw;
+  width: 35vw;
   /*font-size: 2vw;*/
   /*height: 10vh;*/
   /*font-family: 'Amatic SC', cursive;*/
@@ -233,23 +235,17 @@ top: 0px;
   /*flex-direction: row;*/
   align-items: center;
   justify-content: center;
-  border-left: 1px solid #dddddd;
-  border-right: 1px solid #dddddd;
   font-family: 'Amatic SC', cursive;
   /*font-size: 2.5vw;*/
   /*font-family: 'Josefin Sans', sans-serif;*/
   /*font-style: italic;*/
-  font-weight: 100;
   /*color: black;*/
-  color: #333333;
-  height: 1vh;
   width: 100%;
-  font-size: 1.75vw;
   /*margin: 0 auto;*/
   /*overflow: hidden;*/
   /*text-align: right;*/
   /*float: right;*/
-  transition: all .25s;
+  transition: all .5s;
 }
 
 #navigationMenu div:hover {
@@ -258,18 +254,29 @@ top: 0px;
   font-weight: 900;
   font-size: 2.25vw;
   color: #000000;
+}
+
+/*#navigationMenu div:active {
+  color: #005500;
+}*/
+
+.notActive {
+  border-left: 1px solid #dddddd;
+  border-right: 1px solid #dddddd;
+  font-weight: 100;
+  color: #333333;
+  height: 1.5vh;
+  font-size: 2vw;
+}
+
+.active {
+  letter-spacing: .25vw;
+  font-weight: 900;
+  font-size: 2.25vw;
+  color: #000000;
   height: 5vh;
   border-left: 3px solid #005500;
   border-right: 3px solid #005500;
-  /*color: white;*/
-  /*background-color: dimgrey;*/
-  /*background-color: #555555;*/
-  /*border-radius: 15%;*/
-  /*transition: all 0.5s;*/
-}
-
-#navigationMenu div:active {
-  color: #005500;
 }
 
 /*#navigationMenu ul li {
