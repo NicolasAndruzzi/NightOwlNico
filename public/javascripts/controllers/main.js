@@ -204,16 +204,14 @@ app.controller("mainController", function($scope){
 
   // Navigation Click Sends to Section
   $('.navOption').click(function() {
-      var id = $(this).attr("id");
-      console.log($(this).attr('id'));
-      // var offset = 0;
-      var target = $('#'+id).offset().top;
-      $('html, body').animate({
-          scrollTop: target
-      }, 500);
-      // event.preventDefault();
-  });
 
+    var target = $(this).attr("data-scrollTo");
+    console.log(target);
+    $('html, body').animate({
+        scrollTop: $('#' + target).offset().top
+    }, 750);
+    // event.preventDefault();
+  });
 
   // Make Navigation Options Active
   $(window).scroll(function() {
@@ -222,10 +220,9 @@ app.controller("mainController", function($scope){
     $('section').each(function() {
       var top = $(this).offset().top;
       var bottom = top + $(this).outerHeight();
-
       if (currentPosition >= top && currentPosition <= bottom) {
         $('#navigationMenu').find('.navOption').removeClass('active');
-        $('#navigationMenu').find('#' + $(this).attr('id')).addClass('active');
+        $('#navigationMenu').find('#nav_' + $(this).attr('id')).addClass('active');
       }
     });
   });
