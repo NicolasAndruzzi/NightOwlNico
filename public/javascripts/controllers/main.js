@@ -148,7 +148,7 @@ app.controller("mainController", function($scope){
   $(downPointerIcon).click(function () {
     $("html, body").animate({
       scrollTop: $(window).height()
-    }, 1000);
+    }, 750);
     return false;
   });
 
@@ -204,13 +204,17 @@ app.controller("mainController", function($scope){
 
   // Navigation Click Sends to Section
   $('.navOption').click(function() {
-
     var target = $(this).attr("data-scrollTo");
-    console.log(target);
     $('html, body').animate({
         scrollTop: $('#' + target).offset().top
     }, 750);
-    // event.preventDefault();
+  });
+
+  // Navbar Logo Click Sends to Top
+  $('#headerLogoContainer').click(function() {
+    $('html, body').animate({
+        scrollTop: 0
+    }, 750);
   });
 
   // Make Navigation Options Active
