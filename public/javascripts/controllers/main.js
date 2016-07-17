@@ -182,25 +182,21 @@ app.controller("mainController", function($scope){
   // });
   //
 
-  // Scroll-to-Top Button
-  $(window).scroll(function () {
-      if ($(this).scrollTop() > $(window).height()*.65) {
-          $('.scrollup').fadeIn();
-      } else {
-          $('.scrollup').fadeOut();
-      }
-  });
-
-  $('.scrollup').click(function () {
-      $("html, body").animate({
-          scrollTop: 0
-      }, 750);
-      return false;
-  });
-
-  /* WORK IN PROGRESS
-     NAVIGATION ACTIVE STATE IN SECTION AREA
-  */
+  // // Scroll-to-Top Button
+  // $(window).scroll(function () {
+  //     if ($(this).scrollTop() > $(window).height()*.65) {
+  //         $('.scrollup').fadeIn();
+  //     } else {
+  //         $('.scrollup').fadeOut();
+  //     }
+  // });
+  //
+  // $('.scrollup').click(function () {
+  //     $("html, body").animate({
+  //         scrollTop: 0
+  //     }, 750);
+  //     return false;
+  // });
 
   // Navigation Click Sends to Section
   $('.navOption').click(function() {
@@ -217,18 +213,41 @@ app.controller("mainController", function($scope){
     }, 750);
   });
 
-  // Make Navigation Options Active
+  // Scroll Events
   $(window).scroll(function() {
     var currentPosition = $(this).scrollTop();
 
+    // Make Navigation Options Active
     $('section').each(function() {
       var top = $(this).offset().top;
       var bottom = top + $(this).outerHeight();
-      if (currentPosition >= top && currentPosition <= bottom) {
+      if (currentPosition >= top - $(window).height()*.075 && currentPosition <= bottom) {
         $('#navigationMenu').find('.navOption').removeClass('active');
         $('#navigationMenu').find('#nav_' + $(this).attr('id')).addClass('active');
       }
     });
+
+    // Sticky About Menu Div
+    var aboutTop = $('#sec01').offset().top;
+    var aboutBottom = aboutTop + $('#sec01').outerHeight();
+    var aboutStickPoint = aboutBottom - $(window).height()
+    if (currentPosition >= aboutTop && currentPosition <= aboutStickPoint) {
+      $('#about').removeClass('aboutNotFixedTop');
+      $('#about').removeClass('aboutNotFixedBottom');
+      $('#about').addClass('aboutFixed');
+      console.log("here comes dat boi");
+    }
+    else if (currentPosition <= aboutTop) {
+      $('#about').removeClass('aboutFixed');
+      $('#about').addClass('aboutNotFixedTop');
+      console.log("o shit wattup");
+    }
+    else if (currentPosition >= aboutStickPoint) {
+      $('#about').removeClass('aboutFixed');
+      $('#about').addClass('aboutNotFixedBottom');
+      console.log("o shit wattup");
+    }
+
   });
 
 });

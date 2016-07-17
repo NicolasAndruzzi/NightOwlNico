@@ -93,7 +93,7 @@ top: 0px;
   /*padding-bottom: 6px;*/
   /*font-family: 'Amatic SC', cursive;*/
   background-color: white;
-  opacity: .95;
+  opacity: .975;
   /*display: flex;*/
   align-items: center;
   /*justify-content: space-between;*/
@@ -266,13 +266,13 @@ top: 0px;
   font-weight: 100;
   color: #333333;
   height: 1.5vh;
-  font-size: 2vw;
+  font-size: 1.75vw;
 }
-     /*Keep .active below .notActive  || Change the main.js to remove .notActive while .active is on*/
+     /*Keep .active below .notActive  |OR| Change the main.js to remove .notActive while .active is on*/
 .active {
   letter-spacing: .25vw;
   font-weight: 900;
-  font-size: 2.25vw;
+  font-size: 2vw;
   color: #000000;
   height: 5vh;
   border-left: 3px solid #005500;
@@ -535,12 +535,13 @@ top: 0px;
 
 /**********************************************          Hero End          **********************************************/
 
-.scrollup {
+/**********************************************          Scroll To Top Button Begin          **********************************************/
+
+/*.scrollup {
   color: rgba(0,0,0,0.75);
   border-radius: 50%;
   width: 2.5vw;
   height: 2.5vw;
-  /*background-color: darkgreen;*/
   position: fixed;
   display: none;
   bottom: 1.5vh;
@@ -554,57 +555,82 @@ top: 0px;
 
 .scrollup:hover {
   cursor: pointer;
+}*/
+
+/**********************************************          Scroll To Top Button End          **********************************************/
+
+/**********************************************          About Begin          **********************************************/
+
+#about {
+  height: 100vh;
+  width: 50vw;
+  float: left;
 }
 
-
-body {
-  color: #8f8f8f;
-  background: white;
-  /*font-family: "Oswald", serif;*/
-  font-family: 'Josefin Sans', sans-serif;
-  font-weight: 300;
-  -webkit-font-smoothing: antialiased;
-  /*padding: 0;
-  margin: 0;*/
+#aboutContent {
+  position: relative;
+  width: 50vw;
+  float: right;
+  top: 0;
+  right: 0;
 }
+
+.aboutNotFixedTop {
+  background-color: green;
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+
+.aboutNotFixedBottom {
+  background-color: green;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+}
+
+.aboutFixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: red;
+}
+
+/**********************************************          About End          **********************************************/
 
 a {
   text-decoration: none;
 }
 
 h1 {
-  margin-top: 10vh;
-  font-size: 30px;
+  /*margin-top: 10vh;*/
+  /*font-size: 30px;*/
   /*line-height: 1.8;*/
   /*text-transform: uppercase;*/
   font-family: 'Amatic SC', cursive;
   /*font-family: "Oswald", sans-serif;*/
+  margin: 0;
 }
 
 p {
   /*margin-bottom: 20px;*/
   font-size: 17px;
   line-height: 2;
+  margin: 0
 }
 
 .row {
+  color: #8f8f8f;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 300;
+  -webkit-font-smoothing: antialiased;
   width: 100vw;
   margin: 0 auto;
+  min-height: 100vh;
   position: relative;
+  overflow-y: auto;
   /*padding: 0 2%;*/
 }
-
-.content {
-  max-width: 90vw;
-  /*width: 100%;*/
-  min-height: 100vh;
-  margin: 0 auto;
-  padding: 50px 2% 50px;
-}
-
-/*.main_header .row .content {
-padding: 0;
-}*/
 
 .dark {
   background-color: #111111;
