@@ -354,6 +354,53 @@ top: 0px;
   -ms-user-select: none;
 }
 
+#heroHeader {
+  position: absolute;
+  top: .75vh;
+  left: 0;
+  width: 100vw;
+  height: 5vh;
+  /*background-color: red;*/
+  font-family: 'Josefin Sans', sans-serif;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: center;
+}
+
+.title span {
+  color: #aaaaaa;
+  letter-spacing: .5vw;
+  font-weight: 600;
+  font-size: 1.25vw;
+  transition: all .75s;
+  /*background-color: red;*/
+  padding: 1.5vw;
+  border-radius: 2.5vw;
+}
+
+.title span:hover {
+  color: white;
+  /*font-size: 1.25vw;*/
+  transition: all .75s;
+  cursor: pointer;
+  background-color: hsla(0, 0%, 0%, 0.65);
+  /*background-color: red;*/
+}
+
+.title span:active {
+  color: #005500;
+  transition: all .5s;
+  background-color: hsla(0, 0%, 0%, 0.65);
+}
+
+#heroSlogan {
+  font-family: 'Amatic SC', cursive;
+  font-weight: 100;
+  margin-top: 1.5vh;
+  font-size: 3vw;
+}
+
 #heroLogoContainer{
   margin-bottom: 25vh;
   display: flex;
@@ -533,6 +580,7 @@ top: 0px;
 #downPointerIcon:hover {
   cursor: pointer;
 }
+
 
 /**********************************************          Hero End          **********************************************/
 
