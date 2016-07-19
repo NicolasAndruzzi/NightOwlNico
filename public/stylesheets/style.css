@@ -360,7 +360,7 @@ top: 0px;
   left: 0;
   width: 100vw;
   height: 5vh;
-  /*background-color: red;*/
+  /*background-color: green;*/
   font-family: 'Josefin Sans', sans-serif;
   display: flex;
   justify-content: center;
@@ -372,8 +372,9 @@ top: 0px;
   display: flex;
   justify-content: center;
   align-items: center;
-  /*background-color: red;*/
-  width: 31.5%;
+  /*background-color: blue;*/
+  width: 32%;
+  /*border: 1px solid white;*/
 }
 
 .title span {
@@ -385,6 +386,9 @@ top: 0px;
   /*background-color: red;*/
   padding: 1.5vw;
   border-radius: 2.5vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .title span:hover {
@@ -557,46 +561,53 @@ top: 0px;
   /*background-color: red;*/
 }
 
+#heroSloganContainer {
+  position: absolute;
+  top: 79vh;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 21vh;
+  /*background-color: blue;
+  opacity: .5;*/
+}
+
 #heroSlogan {
   font-family: 'Amatic SC', cursive;
   font-weight: 400;
   letter-spacing: .75vw;
   font-size: 4.5vw;
-  position: absolute;
-  top: 82.5vh;
-  left: 30vw;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 40vw;
   background-color: hsla(0, 0%, 0%, 0.5);
-  padding: 1.5vw;
+  /*padding: 1.5vw;*/
   border-radius: 2.5vw;
   /*background-color: orange;*/
-  height: 5vw;
+  /*height: 5vw;*/
+  color: #aaaaaa;
 }
 
 #heroSlogan span {
   color: #005500;
-  width: 4vw;
-}
-
-#heroSlogan .sloganWord {
-  color: #cccccc;
-  width: 16vw;
+  /*background-color: red;*/
 }
 
 .downPointer {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   bottom: 27vh;
   position: absolute;
-  left: 42.5vw;
+  left: 0;
+  width: 100vw;
   /*background-color: red;*/
 }
+
 .downPointer i {
-  width: 15vw;
+  width: 10vw;
   height: auto;
   /*background-color: yellow;*/
   /*text-decoration: none;*/
