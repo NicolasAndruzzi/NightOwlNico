@@ -153,17 +153,17 @@ app.controller("mainController", function($scope){
   });
 
   // Sticky Header
-  $(window).scroll(function() {
-
-      if ($(window).scrollTop() > $(window).height()*.925) {
-          // $('.mainHeader').addClass('sticky');
-          $('.mainHeader').fadeIn(250);
-      }
-      else {
-          // $('.mainHeader').removeClass('sticky');
-          $('.mainHeader').fadeOut(250);
-      }
-  });
+  // $(window).scroll(function() {
+  //
+  //     if ($(window).scrollTop() > $(window).height()*.925) {
+  //         // $('.mainHeader').addClass('sticky');
+  //         $('.mainHeader').fadeIn(250);
+  //     }
+  //     else {
+  //         // $('.mainHeader').removeClass('sticky');
+  //         $('.mainHeader').fadeOut(250);
+  //     }
+  // });
 
   // // Mobile Navigation
   // $('.mobile-toggle').click(function() {
