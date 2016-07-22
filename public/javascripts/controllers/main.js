@@ -24,6 +24,7 @@ app.controller("mainController", function($scope){
 
   // Immediately Hide the Navbar
   $('.mainHeader').hide();
+  $('#heroSloganContainer').hide();
 
   // Moon Hover
   $(heroMoon).hover(
@@ -65,6 +66,7 @@ app.controller("mainController", function($scope){
       $( ".L6" ).addClass( "L6d" );
       $( ".L7" ).addClass( "L7d" );
       $( ".L8" ).addClass( "L8d" );
+      $('#heroSloganContainer').fadeIn(500);
       playing = true;
       console.log("playing");
     }
@@ -81,6 +83,7 @@ app.controller("mainController", function($scope){
       $( ".L6" ).removeClass( "L6d" );
       $( ".L7" ).removeClass( "L7d" );
       $( ".L8" ).removeClass( "L8d" );
+      $('#heroSloganContainer').fadeOut(500);
       playing = false;
       console.log("notPlaying");
     }
@@ -103,6 +106,7 @@ app.controller("mainController", function($scope){
       $( ".L6" ).addClass( "L6d" );
       $( ".L7" ).addClass( "L7d" );
       $( ".L8" ).addClass( "L8d" );
+      $('#heroSloganContainer').fadeIn(500);
       playing = true;
       console.log("playing");
     }
@@ -119,6 +123,7 @@ app.controller("mainController", function($scope){
       $( ".L6" ).removeClass( "L6d" );
       $( ".L7" ).removeClass( "L7d" );
       $( ".L8" ).removeClass( "L8d" );
+      $('#heroSloganContainer').fadeOut(500);
       playing = false;
       // console.log("notPlaying");
     }
@@ -160,6 +165,7 @@ app.controller("mainController", function($scope){
 
   function looper() {
     $('#loveRotate').text(loves[i])
+    console.log("changed" + i);
     i++;
     if (i == loves.length) {
       i = 0;
@@ -251,12 +257,12 @@ app.controller("mainController", function($scope){
       $('#about').addClass('aboutFixed');
       console.log("here comes dat boi");
     }
-    else if (currentPosition <= aboutTop) {
+    if (currentPosition <= aboutTop) {
       $('#about').removeClass('aboutFixed');
       $('#about').addClass('aboutNotFixedTop');
       console.log("o shit wattup");
     }
-    else if (currentPosition >= aboutStickPoint) {
+    if (currentPosition >= aboutStickPoint) {
       $('#about').removeClass('aboutFixed');
       $('#about').addClass('aboutNotFixedBottom');
       console.log("o shit wattup");
