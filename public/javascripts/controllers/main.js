@@ -152,6 +152,15 @@ app.controller("mainController", function($scope){
     return false;
   });
 
+  // Revolving Things I Love
+  var loves = ["Singing Frank Sinatra", "Meditation", "Dog Training", "Triathalons", "Technology", "Dancing In My Living Room"];
+  $('#loveRotate').text(loves[0]);
+  for (var i = 1; i < loves.length; i++) {
+    setInterval(function () {      
+      $('#loveRotate').text(loves[i])
+    }, 1000);
+  }
+
   // Sticky Header
   // $(window).scroll(function() {
   //
