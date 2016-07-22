@@ -25,6 +25,9 @@ app.controller("mainController", function($scope){
   // Immediately Hide the Navbar
   $('.mainHeader').hide();
   $('#heroSloganContainer').hide();
+  $('#sec01').hide();
+  $('#sec02').hide();
+  $('#sec03').hide();
 
   // Moon Hover
   $(heroMoon).hover(
@@ -158,7 +161,73 @@ app.controller("mainController", function($scope){
   });
 
   // Revolving Things I Love
-  var loves = ["Singing Frank Sinatra", "Meditation", "Dog Training", "Triathalons", "Technology",];
+  var loves = [
+    "Singing Frank Sinatra",
+    "Meditation",
+    "Triathalons",
+    "Technology",
+    "Dancing In My Living Room",
+    "Martial Arts",
+    "Dog Training",
+    "Animals",
+    "UX-UI Design",
+    "Yoga",
+    "Robotics",
+    "Italy",
+    "Skydiving",
+    "My Family",
+    "Programming",
+    "3D Printing",
+    "Magic Tricks",
+    "Creating Art",
+    "Reading",
+    "Airbending",
+    "Laser Engraving",
+    "Owls",
+    "Playing With Children",
+    "Teaching",
+    // "Leaving My Compfort Zone",
+    "NYC",
+    "Learning",
+    "Stand Up Comedy",
+    "Surfing",
+    "Snowboarding",
+    "Surprising Myself",
+    "Soldering",
+    "Scuba Diving",
+    "Inventing",
+    "Cooking",
+    "My Friends",
+    "Self Improvement",
+    "Earthbending",
+    "Dreaming Big",
+    "Being Unique",
+    "Clay Shooting",
+    "Climbing Trees",
+    "Cliff Diving",
+    "Frisbee Golf",
+    "Ultimate Frisbee",
+    "My Dog Vulcan",
+    "Firebending",
+    "Driving",
+    "Hammocks",
+    "Penn State",
+    "Camping",
+    "Swimming",
+    "Sitting By A Fire",
+    "Chess",
+    "Hiking",
+    "Meeting New People",
+    "Exploring",
+    "Going On Adventures",
+    "Famous Quotes",
+    "Traveling",
+    "Waterbending",
+    // "",
+    // "",
+    // "",
+    // "",
+  ];
   var lovesLoop = setInterval(looper, 500);
   var i = 1;
   $('#loveRotate').text(loves[0])

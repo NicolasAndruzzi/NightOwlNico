@@ -671,10 +671,18 @@ top: 0px;
   justify-content: center;
   align-items: center;
   /*flex-direction: column;*/
-  background-color: blue;
+  /*background-color: blue;*/
   top: 150vh;
   left: 0;
   z-index: 100;
+  letter-spacing: .15vw;
+  line-height: 5vh;
+  /*word-spacing: 1vw;*/
+  color: white;
+  /*font-family: 'Amatic SC', cursive;*/
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 3vw;
+  font-weight: 100;
 }
 
 
