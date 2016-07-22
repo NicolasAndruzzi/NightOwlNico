@@ -153,12 +153,17 @@ app.controller("mainController", function($scope){
   });
 
   // Revolving Things I Love
-  var loves = ["Singing Frank Sinatra", "Meditation", "Dog Training", "Triathalons", "Technology", "Dancing In My Living Room"];
-  $('#loveRotate').text(loves[0]);
-  for (var i = 1; i < loves.length; i++) {
-    setInterval(function () {      
-      $('#loveRotate').text(loves[i])
-    }, 1000);
+  var loves = ["Singing Frank Sinatra", "Meditation", "Dog Training", "Triathalons", "Technology",];
+  var lovesLoop = setInterval(looper, 500);
+  var i = 1;
+  $('#loveRotate').text(loves[0])
+
+  function looper() {
+    $('#loveRotate').text(loves[i])
+    i++;
+    if (i == loves.length) {
+      i = 0;
+    }
   }
 
   // Sticky Header
