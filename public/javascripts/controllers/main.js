@@ -29,6 +29,7 @@ app.controller("mainController", function($scope){
   // $('#sec02').hide();
   // $('#sec03').hide();
 
+
   // Moon Hover
   $(heroMoon).hover(
     function() {
@@ -52,10 +53,9 @@ app.controller("mainController", function($scope){
 
   // Moon Tunes
   var playing = false;
+  $('#player')[0].volume = .33;
 
   $(heroMoon).click(function() {
-    console.log("clicked");
-
     if (playing == false) {
       (player).play();
       $( "#heroMoon" ).addClass( "moonTuneAnimation" );
@@ -71,7 +71,6 @@ app.controller("mainController", function($scope){
       $( ".L8" ).addClass( "L8d" );
       $('#heroSloganContainer').fadeIn(500);
       playing = true;
-      console.log("playing");
     }
     else {
       (player).pause();
@@ -88,14 +87,11 @@ app.controller("mainController", function($scope){
       $( ".L8" ).removeClass( "L8d" );
       $('#heroSloganContainer').fadeOut(500);
       playing = false;
-      console.log("notPlaying");
     }
 
   });
 
   $(heroOwlFaceInLogo).click(function() {
-    // console.log("clicked");
-
     if (playing == false) {
       (player).play();
       $( "#heroMoon" ).addClass( "moonTuneAnimation" );
@@ -111,7 +107,6 @@ app.controller("mainController", function($scope){
       $( ".L8" ).addClass( "L8d" );
       $('#heroSloganContainer').fadeIn(500);
       playing = true;
-      console.log("playing");
     }
     else {
       (player).pause();
@@ -128,7 +123,6 @@ app.controller("mainController", function($scope){
       $( ".L8" ).removeClass( "L8d" );
       $('#heroSloganContainer').fadeOut(500);
       playing = false;
-      // console.log("notPlaying");
     }
 
   });
@@ -329,17 +323,17 @@ app.controller("mainController", function($scope){
       $('#about').removeClass('aboutNotFixedTop');
       $('#about').removeClass('aboutNotFixedBottom');
       $('#about').addClass('aboutFixed');
-      console.log("here comes dat boi");
+      // console.log("here comes dat boi");
     }
     if (currentPosition <= aboutTop) {
       $('#about').removeClass('aboutFixed');
       $('#about').addClass('aboutNotFixedTop');
-      console.log("o shit wattup");
+      // console.log("o shit wattup");
     }
     if (currentPosition >= aboutStickPoint) {
       $('#about').removeClass('aboutFixed');
       $('#about').addClass('aboutNotFixedBottom');
-      console.log("o shit wattup");
+      // console.log("o shit wattup");
     }
 
   });
