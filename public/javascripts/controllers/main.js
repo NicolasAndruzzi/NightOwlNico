@@ -233,13 +233,12 @@ app.controller("mainController", function($scope){
   $('#loveRotate').text(loves[Math.floor(Math.random() * loves.length)])
 
   function looper() {
-    // $('#loveRotate').text(loves[i])
     var randomValue = Math.floor(Math.random() * loves.length);
     var randomLove = loves[randomValue];
     $('#loveRotate').text(randomLove);
     loves.splice(randomValue , 1);
     i++;
-    if (i > originalLoves.length - 1) {
+    if (i >= originalLoves.length) {
       i = 0;
       loves = originalLoves.slice();
     }
