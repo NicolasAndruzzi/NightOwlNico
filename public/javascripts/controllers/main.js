@@ -161,6 +161,8 @@ app.controller("mainController", function($scope){
   });
 
   // Revolving Things I Love
+  // All Phrases Should Be <= 4 Syllables
+  // Ideally Also <= 2 Words
   var originalLoves = [
     "Frank Sinatra",
     "Meditation",
@@ -189,7 +191,7 @@ app.controller("mainController", function($scope){
     // "Leaving My Compfort Zone",
     "NYC",
     "Learning",
-    "Stand-Up Comedy",
+    "Live Comedy",
     "Surfing",
     "Snowboarding",
     "Singing",
