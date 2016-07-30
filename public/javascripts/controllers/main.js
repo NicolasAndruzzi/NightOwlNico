@@ -25,9 +25,9 @@ app.controller("mainController", function($scope){
   // Immediately Hide the Navbar
   $('.mainHeader').hide();
   $('#heroSloganContainer').hide();
-  $('#sec01').hide();
-  $('#sec02').hide();
-  $('#sec03').hide();
+  // $('#sec01').hide();
+  // $('#sec02').hide();
+  // $('#sec03').hide();
 
   // Moon Hover
   $(heroMoon).hover(
@@ -161,16 +161,16 @@ app.controller("mainController", function($scope){
   });
 
   // Revolving Things I Love
-  var loves = [
+  var originalLoves = [
     "Frank Sinatra",
     "Meditation",
     "Triathalons",
     "Technology",
-    // "Dancing In My Living Room",
+    "Dancing",
     "Martial Arts",
     "Dog Training",
     "Animals",
-    "UX-UI Design",
+    "UX-UI",
     "Yoga",
     "Robotics",
     "Italy",
@@ -179,20 +179,20 @@ app.controller("mainController", function($scope){
     "Programming",
     "3D Printing",
     "Magic Tricks",
-    "Creating Art",
+    "Art",
     "Reading",
     "Airbending",
-    "Laser Engraving",
+    "Colorado",
     "Owls",
     // "Playing With Children",
     "Teaching",
     // "Leaving My Compfort Zone",
     "NYC",
     "Learning",
-    "Stand Up Comedy",
+    "Stand-Up Comedy",
     "Surfing",
     "Snowboarding",
-    "Surprising Myself",
+    "Singing",
     "Soldering",
     "Scuba Diving",
     "Inventing",
@@ -200,13 +200,13 @@ app.controller("mainController", function($scope){
     "My Friends",
     "Self Improvement",
     "Earthbending",
-    "Dreaming Big",
-    "Being Unique",
+    "Waterslides",
+    // "Being Unique",
     "Clay Shooting",
     "Climbing Trees",
     "Cliff Diving",
     "Frisbee Golf",
-    "Ultimate Frisbee",
+    "The Ocean",
     "My Dog Vulcan",
     "Firebending",
     "Driving",
@@ -214,7 +214,6 @@ app.controller("mainController", function($scope){
     "Penn State",
     "Camping",
     "Swimming",
-    // "Sitting By A Fire",
     "Chess",
     "Hiking",
     // "Interesting People",
@@ -228,16 +227,21 @@ app.controller("mainController", function($scope){
     // "",
     // "",
   ];
-  var lovesLoop = setInterval(looper, 500);
-  var i = 1;
-  $('#loveRotate').text(loves[0])
+  var lovesLoop = setInterval(looper, 600);
+  var i = 0;
+  var loves = originalLoves.slice();
+  $('#loveRotate').text(loves[Math.floor(Math.random() * loves.length)])
 
   function looper() {
-    $('#loveRotate').text(loves[i])
-    console.log("changed" + i);
+    // $('#loveRotate').text(loves[i])
+    var randomValue = Math.floor(Math.random() * loves.length);
+    var randomLove = loves[randomValue];
+    $('#loveRotate').text(randomLove);
+    loves.splice(randomValue , 1);
     i++;
-    if (i == loves.length) {
+    if (i > originalLoves.length - 1) {
       i = 0;
+      loves = originalLoves.slice();
     }
   }
 
