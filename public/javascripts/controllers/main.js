@@ -149,7 +149,7 @@ app.controller("mainController", function($scope){
   // Scroll-Down Button
   $(downPointerIcon).click(function () {
     $("html, body").animate({
-      scrollTop: $(window).height()
+      scrollTop: $(window).height()*.85
     }, 750);
     return false;
   });
@@ -180,7 +180,7 @@ app.controller("mainController", function($scope){
     "Airbending",
     "Colorado",
     "Owls",
-    // "Playing With Children",
+    "A Challenge",
     "Teaching",
     // "Leaving My Compfort Zone",
     "NYC",
@@ -239,19 +239,6 @@ app.controller("mainController", function($scope){
       loves = originalLoves.slice();
     }
   }
-
-  // Sticky Header
-  // $(window).scroll(function() {
-  //
-  //     if ($(window).scrollTop() > $(window).height()*.925) {
-  //         // $('.mainHeader').addClass('sticky');
-  //         $('.mainHeader').fadeIn(250);
-  //     }
-  //     else {
-  //         // $('.mainHeader').removeClass('sticky');
-  //         $('.mainHeader').fadeOut(250);
-  //     }
-  // });
 
   // // Mobile Navigation
   // $('.mobile-toggle').click(function() {
@@ -321,26 +308,35 @@ app.controller("mainController", function($scope){
     var aboutBottom = aboutTop + $('#sec01').outerHeight();
     var aboutStickPoint = aboutBottom - $(window).height()
     if (currentPosition >= aboutTop && currentPosition <= aboutStickPoint) {
+      $('#about').addClass('aboutFixed');
       $('#about').removeClass('aboutNotFixedTop');
       $('#about').removeClass('aboutNotFixedBottom');
-      $('#about').addClass('aboutFixed');
       // console.log("here comes dat boi");
     }
-    if (currentPosition <= aboutTop) {
-      $('#about').removeClass('aboutFixed');
+    if (currentPosition < aboutTop) {
       $('#about').addClass('aboutNotFixedTop');
+      $('#about').removeClass('aboutFixed');
       // console.log("o shit wattup");
     }
-    if (currentPosition >= aboutStickPoint) {
-      $('#about').removeClass('aboutFixed');
+    if (currentPosition > aboutStickPoint) {
       $('#about').addClass('aboutNotFixedBottom');
+      $('#about').removeClass('aboutFixed');
       // console.log("o shit wattup");
     }
 
-    // Remove Down Arrows on Hero
+    // Remove Down Arrows on Hero After Scrolling Down
     if (currentPosition >= $(window).height() * .33) {
       $(downPointerIcon).fadeOut();
     }
+
+    // Sticky Header
+    if (currentPosition > $('#hero').outerHeight() + $('#cinemagraphContainer').outerHeight() - $(window).height()*.25) {
+        $('.mainHeader').fadeIn(500);
+    };
+    if (currentPosition < $('#hero').outerHeight() + $('#cinemagraphContainer').outerHeight() - $(window).height()*.25) {
+        $('.mainHeader').fadeOut(500);
+    };
+
   });
 
 });

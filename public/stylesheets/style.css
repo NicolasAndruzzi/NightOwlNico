@@ -112,7 +112,7 @@ top: 0px;
   font-size: 3vw;
   /*position: fixed;*/
   /*background-color: green;*/
-  margin-left: 1.5vw;
+  margin-left: 3vw;
   width: 30vw;
   /*margin-right: 1.5vw;*/
   transition: all .5s;
@@ -755,6 +755,10 @@ top: 0px;
   float: left;
   margin-left: 3vw;
   background-color: #005500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   /*opacity: .9;*/
   /*margin-bottom: -10vh;*/
   color: white;
@@ -774,14 +778,14 @@ top: 0px;
   margin-bottom: 7.5vh;
 }
 
-.aboutNotFixedTop {
-  position: absolute;
+.aboutFixed {
+  position: fixed;
   top: 0;
   left: 0;
 }
 
-.aboutFixed {
-  position: fixed;
+.aboutNotFixedTop {
+  position: absolute;
   top: 0;
   left: 0;
 }
@@ -790,6 +794,10 @@ top: 0px;
   position: absolute;
   bottom: 0;
   left: 0;
+}
+
+#subMenuSpaceHolder {
+  height: 7.5vh;
 }
 
 .subMenuContainer {
@@ -808,7 +816,7 @@ top: 0px;
 
 #how {
   background-color: blue;
-  
+
 }
 
 #what {
