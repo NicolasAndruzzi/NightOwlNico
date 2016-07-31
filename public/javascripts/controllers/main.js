@@ -315,6 +315,7 @@ app.controller("mainController", function($scope){
       }
     });
 
+
     // Sticky About Menu Div
     var aboutTop = $('#sec01').offset().top;
     var aboutBottom = aboutTop + $('#sec01').outerHeight();
@@ -336,6 +337,10 @@ app.controller("mainController", function($scope){
       // console.log("o shit wattup");
     }
 
+    // Remove Down Arrows on Hero
+    if (currentPosition >= $(window).height() * .33) {
+      $(downPointerIcon).fadeOut();
+    }
   });
 
 });
