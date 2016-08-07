@@ -25,9 +25,9 @@ app.controller("mainController", function($scope){
   // Immediately Hide the Navbar
   $('.mainHeader').hide();
   $('#heroSloganContainer').hide();
-  $('#sec01').hide();
-  $('#sec02').hide();
-  $('#sec03').hide();
+  // $('#sec01').hide();
+  // $('#sec02').hide();
+  // $('#sec03').hide();
 
 
   // Moon Hover
@@ -302,25 +302,24 @@ app.controller("mainController", function($scope){
       }
     });
 
-
     // Sticky About Menu Div
     var aboutTop = $('#sec01').offset().top;
     var aboutBottom = aboutTop + $('#sec01').outerHeight();
     var aboutStickPoint = aboutBottom - $(window).height()
     if (currentPosition >= aboutTop && currentPosition <= aboutStickPoint) {
-      $('#about').addClass('aboutFixed');
       $('#about').removeClass('aboutNotFixedTop');
       $('#about').removeClass('aboutNotFixedBottom');
+      $('#about').addClass('aboutFixed');
       // console.log("here comes dat boi");
     }
     if (currentPosition < aboutTop) {
-      $('#about').addClass('aboutNotFixedTop');
       $('#about').removeClass('aboutFixed');
+      $('#about').addClass('aboutNotFixedTop');
       // console.log("o shit wattup");
     }
     if (currentPosition > aboutStickPoint) {
-      $('#about').addClass('aboutNotFixedBottom');
       $('#about').removeClass('aboutFixed');
+      $('#about').addClass('aboutNotFixedBottom');
       // console.log("o shit wattup");
     }
 

@@ -245,6 +245,7 @@ top: 0px;
   /*overflow: hidden;*/
   /*text-align: right;*/
   /*float: right;*/
+  /*background-color: red;*/
   transition: all .5s;
 }
 
@@ -268,7 +269,8 @@ top: 0px;
   height: 1.5vh;
   font-size: 1.75vw;
 }
-     /*Keep .active below .notActive  |OR| Change the main.js to remove .notActive while .active is on*/
+
+/*Keep .active below .notActive  |OR| Change the main.js to remove .notActive while .active is on*/
 .active {
   letter-spacing: .25vw;
   font-weight: 900;
@@ -380,12 +382,13 @@ top: 0px;
 }
 
 .title span {
-  color: #aaaaaa;
+  color: white;
+  opacity: .5;
   letter-spacing: .5vw;
   font-weight: 400;
   font-size: 1.25vw;
   transition: all .75s;
-  /*background-color: red;*/
+  background-color: hsla(0, 0%, 0%, 0.6);
   padding: 1.5vw;
   border-radius: 2.5vw;
   display: flex;
@@ -395,6 +398,7 @@ top: 0px;
 
 .title span:hover {
   color: white;
+  opacity: 1;
   /*font-size: 1.25vw;*/
   letter-spacing: .525vw;
   transition: all .75s;
@@ -405,7 +409,8 @@ top: 0px;
 
 .title span:active {
   color: #005500;
-  transition: all .5s;
+  opacity: 1;
+  transition: all .25s;
   background-color: hsla(0, 0%, 0%, 0.6);
 }
 
@@ -602,21 +607,20 @@ top: 0px;
 .downPointer {
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  bottom: 27vh;
+  justify-content: space-between;
+  bottom: 29.5vh;
   position: absolute;
   left: 0;
   width: 100vw;
   /*background-color: red;*/
 }
 
-.downPointer i {
-  width: 10vw;
+.downPointer img {
+  width: 2.5vw;
   height: auto;
+  margin-left: 17.5vw;
+  margin-right: 17.5vw;
   /*background-color: yellow;*/
-  /*text-decoration: none;*/
-  color: white;
-  /*opacity: 1;*/
   animation-duration: 1.5s;
   animation-fill-mode: both;
   animation-iteration-count: infinite;
@@ -784,15 +788,15 @@ top: 0px;
   left: 0;
 }
 
-.aboutNotFixedTop {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
 .aboutNotFixedBottom {
   position: absolute;
   bottom: 0;
+  left: 0;
+}
+
+.aboutNotFixedTop {
+  position: absolute;
+  top: 0;
   left: 0;
 }
 
@@ -926,7 +930,7 @@ p {
   }
 
   50% {
-    opacity: .25;
+    opacity: .2;
     transform: translateY(20px);
   }
 
