@@ -63,7 +63,7 @@ black(Safe 16 Hex3) cmyk(0%, 0%, 0%, 100%) #000000*/
 
 /**********************************************          404 Page End          **********************************************/
 
-/**********************************************          Header Begin          **********************************************/
+/**********************************************          Header 1 (Dark) Begin          **********************************************/
 
 /*.sticky {
 background-color: rgba(255, 255, 255, 0.93);
@@ -331,7 +331,278 @@ top: 0px;
   box-sizing: border-box;
 }*/
 
-/**********************************************          Header End          **********************************************/
+/**********************************************          Header 1 (Dark) End          **********************************************/
+
+/**********************************************          Header 2 (Light) Begin          **********************************************/
+
+/*.sticky {
+background-color: rgba(255, 255, 255, 0.93);
+transition: all 0.3s;
+display: flex;
+opacity: 1;
+flex-direction: row;
+top: 0px;
+}*/
+
+.mainHeader {
+  /*transition: all 0.3s;*/
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 7.5vh;
+  z-index: 1;
+  /*opacity: 0;*/
+  display: flex;
+  /*display: none;*/
+  /*padding-top: 17px;*/
+  /*background: none;*/
+  /*overflow: hidden;*/
+  /*opacity: 0;*/
+  /*top: -100px;*/
+  /*padding-bottom: 6px;*/
+  /*font-family: 'Amatic SC', cursive;*/
+  background-color: white;
+  opacity: .975;
+  /*display: flex;*/
+  align-items: center;
+  /*justify-content: space-between;*/
+  /*border-bottom: 1px solid whitesmoke;*/
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  box-shadow: 0 0 7.5vh #444444;
+}
+
+#headerLogoContainer{
+  display: flex;
+  /*flex-direction: row;*/
+  align-items: center;
+  justify-content: center;
+  font-size: 3vw;
+  /*position: fixed;*/
+  /*background-color: green;*/
+  margin-left: 3vw;
+  width: 30vw;
+  /*margin-right: 1.5vw;*/
+  transition: all .5s;
+  height: 100%;
+  /*font-size: 2.5vw;*/
+}
+
+#headerLogoContainer:hover {
+  cursor: pointer;
+  letter-spacing: .15vw;
+  transition: all .5s;
+  /*font-size: 3.5vw;*/
+}
+
+#headerHeroLogo1 {
+  font-family: 'Amatic SC', cursive;
+  font-weight: 100;
+  color: #000000;
+}
+
+#headerOwlFaceInLogo{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Permanent Marker', cursive;
+  font-weight: 100;
+  color: #005500;
+  /*transition: all 0.5s;*/
+  /*font-size: 3vw;*/
+  /*transition: all 1s;*/
+  /*z-index: 1;*/
+  /*background-color: orange;*/
+}
+
+#headerHeroLogo2 {
+  font-family: 'Amatic SC', cursive;
+  font-weight: 100;
+  color: #000000;
+}
+
+#headerLogoContainer:hover #headerHeroLogo1 {
+  color: black;
+  font-weight: 900;
+  /*transition: all 0.s;*/
+}
+
+#headerLogoContainer:hover #headerHeroLogo2 {
+  color: black;
+  font-weight: 900;
+  /*transition: all 0.s;*/
+  /*font-size: 3.5vw;*/
+}
+
+#headerLogoLetter {
+
+}
+
+/*.logo {*/
+  /*width: 50px;*/
+  /*color: black;*/
+  /*align-items: center;*/
+  /*justify-content: center;*/
+  /*flex-direction: row;*/
+  /*height: 100%;*/
+  /*float: left;*/
+  /*display: block;*/
+  /*margin-top: 0;*/
+  /*line-height: 1;*/
+  /*margin-bottom: 10px;*/
+  /*background-color: red;*/
+  /*margin-left: 1.5vw;*/
+/*}*/
+
+/*#headerLogo1{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+  font-family: 'Amatic SC', cursive;
+  font-size: 12vw;
+  font-weight: 100;
+  color: black;
+  background-color: green;
+}*/
+
+/*#headerLogo2{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+  font-family: 'Amatic SC', cursive;
+  font-size: 12vw;
+  font-weight: 100;
+  color: black;
+  background-color: red;
+}*/
+
+#navigationMenu {
+  /*float: right;*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /*margin-left: 1.5vw;*/
+  /*margin-right: 1.5vw;*/
+  /*margin: 0 auto;*/
+  margin-right: 4.5vw;
+  margin-left: auto;
+  /*background-color: blue;*/
+  width: 35vw;
+  /*font-size: 2vw;*/
+  /*height: 10vh;*/
+  /*font-family: 'Amatic SC', cursive;*/
+  /*font-weight: 100;*/
+}
+
+#navigationMenu div {
+  display: flex;
+  /*flex-direction: row;*/
+  align-items: center;
+  justify-content: center;
+  font-family: 'Amatic SC', cursive;
+  /*font-size: 2.5vw;*/
+  /*font-family: 'Josefin Sans', sans-serif;*/
+  /*font-style: italic;*/
+  /*color: black;*/
+  width: 100%;
+  /*margin: 0 auto;*/
+  /*overflow: hidden;*/
+  /*text-align: right;*/
+  /*float: right;*/
+  /*background-color: red;*/
+  transition: all .5s;
+}
+
+#navigationMenu div:hover {
+  cursor: pointer;
+  letter-spacing: .25vw;
+  font-weight: 900;
+  font-size: 2.25vw;
+  color: #000000;
+}
+
+/*#navigationMenu div:active {
+  color: #005500;
+}*/
+
+.notActive {
+  border-left: 1px solid #dddddd;
+  border-right: 1px solid #dddddd;
+  font-weight: 100;
+  color: #333333;
+  height: 1.5vh;
+  font-size: 1.75vw;
+}
+
+/*Keep .active below .notActive  |OR| Change the main.js to remove .notActive while .active is on*/
+.active {
+  letter-spacing: .25vw;
+  font-weight: 900;
+  font-size: 2vw;
+  color: #000000;
+  height: 5vh;
+  border-left: 3px solid #005500;
+  border-right: 3px solid #005500;
+}
+
+/*#navigationMenu ul li {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: red;
+  border: 1px solid white;
+  width: 25%;
+  flex-grow: 1;
+  display: inline-block;
+  margin-left: 35px;
+  line-height: 1.5;
+}*/
+
+/*nav ul a.active {
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+  transition: all 500ms 100ms linear;
+}*/
+
+/*.open-nav {
+  max-height: 100vh;
+}
+.open-nav .mobile-toggle {
+  transform: rotate(-90deg);
+}
+
+.mobile-toggle {
+  display: none;
+  cursor: pointer;
+  font-size: 20px;
+  position: absolute;
+  right: 22px;
+  top: 0;
+  width: 30px;
+  transition: all 200ms ease-in;
+}
+
+.mobile-toggle span {
+  width: 30px;
+  height: 4px;
+  margin-bottom: 6px;
+  border-radius: 1000px;
+  background: #8f8f8f;
+  display: block;
+}*/
+
+/** {
+  box-sizing: border-box;
+}*/
+
+/**********************************************          Header 2 (Light) End          **********************************************/
+
 
 /**********************************************          Hero Begin          **********************************************/
 
