@@ -1,4 +1,2 @@
-# nightOwlNico
-Personal Website
----
-###NightOwlNico.com
+#Personal Website
+NightOwlNico.com
