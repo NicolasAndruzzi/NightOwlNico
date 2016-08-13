@@ -272,7 +272,6 @@ app.controller("mainController", function($scope){
   //     }, 750);
   //     return false;
   // });
-
   // Navigation Click Sends to Section
   $('.navOption').click(function() {
     var target = $(this).attr("data-scrollTo");
@@ -310,17 +309,14 @@ app.controller("mainController", function($scope){
       $('#about').removeClass('aboutNotFixedTop');
       $('#about').removeClass('aboutNotFixedBottom');
       $('#about').addClass('aboutFixed');
-      // console.log("here comes dat boi");
     }
     if (currentPosition < aboutTop) {
       $('#about').removeClass('aboutFixed');
       $('#about').addClass('aboutNotFixedTop');
-      // console.log("o shit wattup");
     }
     if (currentPosition > aboutStickPoint) {
       $('#about').removeClass('aboutFixed');
       $('#about').addClass('aboutNotFixedBottom');
-      // console.log("o shit wattup");
     }
 
     // Remove Down Arrows on Hero After Scrolling Down
