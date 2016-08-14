@@ -92,7 +92,7 @@ top: 0px;
   /*top: -100px;*/
   /*padding-bottom: 6px;*/
   /*font-family: 'Amatic SC', cursive;*/
-  opacity: .975;
+  opacity: .95;
   /*display: flex;*/
   align-items: center;
   /*justify-content: space-between;*/
@@ -100,6 +100,7 @@ top: 0px;
   -moz-user-select: none;
   -webkit-user-select: none;
   -ms-user-select: none;
+  transition: all 2.5s;
 }
 
 #headerLogoContainer{
@@ -309,13 +310,13 @@ top: 0px;
 /**********************************************          Header (Dark or Light Styling) Begin          **********************************************/
 
 .DmainHeader {
-  background-color: black;
-  box-shadow: 0 0 7.5vh white;
+  background-color: #111;
+  box-shadow: 0 0 10vh 1vh #000;
 }
 
 .LmainHeader {
-  background-color: white;
-  box-shadow: 0 0 7.5vh black;
+  background-color: #eee;
+  box-shadow: 0 0 10vh 1vh #000;
 }
 
 .DheaderHeroLogo1 {
@@ -335,10 +336,19 @@ top: 0px;
 }
 
 .DnotActive {
-  border-left: 1px solid #dddddd;
-  border-right: 1px solid #dddddd;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
   font-weight: 100;
-  color: #333333;
+  color: #ccc;
+  height: 1.5vh;
+  font-size: 1.75vw;
+}
+
+.LnotActive {
+  border-left: 1px solid #333;
+  border-right: 1px solid #333;
+  font-weight: 100;
+  color: #333;
   height: 1.5vh;
   font-size: 1.75vw;
 }
@@ -347,26 +357,17 @@ top: 0px;
   letter-spacing: .25vw;
   font-weight: 900;
   font-size: 2vw;
-  color: #000000;
+  color: #ddd;
   height: 5vh;
   border-left: 3px solid #005500;
   border-right: 3px solid #005500;
-}
-
-.LnotActive {
-  border-left: 1px solid #dddddd;
-  border-right: 1px solid #dddddd;
-  font-weight: 100;
-  color: #333333;
-  height: 1.5vh;
-  font-size: 1.75vw;
 }
 
 .Lactive {
   letter-spacing: .25vw;
   font-weight: 900;
   font-size: 2vw;
-  color: #000000;
+  color: #222;
   height: 5vh;
   border-left: 3px solid #005500;
   border-right: 3px solid #005500;
@@ -910,11 +911,11 @@ p {
 }
 
 .dark {
-  background-color: #111111;
+  background-color: #111;
 }
 
 .light {
-  background-color: #eeeeee;
+  background-color: #eee;
 }
 
 /**********************************************          About Section Begin          **********************************************/

@@ -298,12 +298,42 @@ app.controller("mainController", function($scope){
       var top = $(this).offset().top;
       var bottom = top + $(this).outerHeight();
       if (currentPosition >= top - $(window).height()*.075 && currentPosition <= bottom && $(this).attr('id') === "sec01") {
-        console.log($(this).attr('id'));
         $('#navigationMenu').find('.navOption').removeClass('Dactive');
         $('#navigationMenu').find('.navOption').removeClass('Lactive');
+        $('#navigationMenu').find('.navOption').removeClass('DnotActive');
+        $('#navigationMenu').find('.navOption').removeClass('LnotActive');
         $('#mainHeader').removeClass('LmainHeader');
         $('#headerHeroLogo1').removeClass('LheaderHeroLogo1');
         $('#headerHeroLogo2').removeClass('LheaderHeroLogo2');
+        $('#navigationMenu').find('.navOption').addClass('DnotActive');
+        $('#navigationMenu').find('#nav_' + $(this).attr('id')).addClass('Dactive');
+        $('#mainHeader').addClass('DmainHeader');
+        $('#headerHeroLogo1').addClass('DheaderHeroLogo1');
+        $('#headerHeroLogo2').addClass('DheaderHeroLogo2');
+      }
+      if (currentPosition >= top - $(window).height()*.075 && currentPosition <= bottom && $(this).attr('id') === "sec02") {
+        $('#navigationMenu').find('.navOption').removeClass('Dactive');
+        $('#navigationMenu').find('.navOption').removeClass('Lactive');
+        $('#navigationMenu').find('.navOption').removeClass('DnotActive');
+        $('#navigationMenu').find('.navOption').removeClass('LnotActive');
+        $('#mainHeader').removeClass('DmainHeader');
+        $('#headerHeroLogo1').removeClass('DheaderHeroLogo1');
+        $('#headerHeroLogo2').removeClass('DheaderHeroLogo2');
+        $('#navigationMenu').find('.navOption').addClass('LnotActive');
+        $('#navigationMenu').find('#nav_' + $(this).attr('id')).addClass('Lactive');
+        $('#mainHeader').addClass('LmainHeader');
+        $('#headerHeroLogo1').addClass('LheaderHeroLogo1');
+        $('#headerHeroLogo2').addClass('LheaderHeroLogo2');
+      }
+      if (currentPosition >= top - $(window).height()*.075 && currentPosition <= bottom && $(this).attr('id') === "sec03") {
+        $('#navigationMenu').find('.navOption').removeClass('Dactive');
+        $('#navigationMenu').find('.navOption').removeClass('Lactive');
+        $('#navigationMenu').find('.navOption').removeClass('DnotActive');
+        $('#navigationMenu').find('.navOption').removeClass('LnotActive');
+        $('#mainHeader').removeClass('LmainHeader');
+        $('#headerHeroLogo1').removeClass('LheaderHeroLogo1');
+        $('#headerHeroLogo2').removeClass('LheaderHeroLogo2');
+        $('#navigationMenu').find('.navOption').addClass('DnotActive');
         $('#navigationMenu').find('#nav_' + $(this).attr('id')).addClass('Dactive');
         $('#mainHeader').addClass('DmainHeader');
         $('#headerHeroLogo1').addClass('DheaderHeroLogo1');
@@ -336,10 +366,10 @@ app.controller("mainController", function($scope){
 
     // Sticky Header
     if (currentPosition > $('#hero').outerHeight() + $('#cinemagraphContainer').outerHeight() - $(window).height()*.25) {
-        $('#mainHeader').fadeIn(1000);
+        $('#mainHeader').fadeIn(0);
     };
     if (currentPosition < $('#hero').outerHeight() + $('#cinemagraphContainer').outerHeight() - $(window).height()*.25) {
-        $('#mainHeader').fadeOut(1000);
+        $('#mainHeader').fadeOut(0);
     };
 
   });
