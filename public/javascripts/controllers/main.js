@@ -22,7 +22,7 @@ app.controller("mainController", function($scope){
   console.log("╚═╝  ╚═══╝╚═╝ ╚═════╝ ╚═════╝");
   console.log("---------------------------------------");
 
-  // Immediately Hide the Navbar
+  // Immediately Hide the Navbar & Slogan
   $('#mainHeader').hide();
   $('#heroSloganContainer').hide();
   // $('#sec01').hide();
