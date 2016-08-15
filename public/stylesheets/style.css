@@ -336,8 +336,8 @@ top: 0px;
 }
 
 .DnotActive {
-  border-left: 1px solid #ccc;
-  border-right: 1px solid #ccc;
+  border-left: 1px solid #777;
+  border-right: 1px solid #777;
   font-weight: 100;
   color: #ccc;
   height: 1.5vh;
@@ -345,8 +345,8 @@ top: 0px;
 }
 
 .LnotActive {
-  border-left: 1px solid #333;
-  border-right: 1px solid #333;
+  border-left: 1px solid #888;
+  border-right: 1px solid #888;
   font-weight: 100;
   color: #333;
   height: 1.5vh;
