@@ -22,8 +22,8 @@ app.controller("mainController", function($scope){
   console.log("╚═╝  ╚═══╝╚═╝ ╚═════╝ ╚═════╝");
   console.log("---------------------------------------");
 
-  // Immediately Hide the Navbar
-  $('.mainHeader').hide();
+  // Immediately Hide the Navbar & Slogan
+  $('#mainHeader').hide();
   $('#heroSloganContainer').hide();
   // $('#sec01').hide();
   // $('#sec02').hide();
@@ -288,12 +288,51 @@ app.controller("mainController", function($scope){
     var currentPosition = $(this).scrollTop();
 
     // Make Navigation Options Active
+    // Also toggle navbar between dark and light depending on the Section
     $('section').each(function() {
       var top = $(this).offset().top;
       var bottom = top + $(this).outerHeight();
-      if (currentPosition >= top - $(window).height()*.075 && currentPosition <= bottom) {
-        $('#navigationMenu').find('.navOption').removeClass('active');
-        $('#navigationMenu').find('#nav_' + $(this).attr('id')).addClass('active');
+      if (currentPosition >= top - $(window).height()*.075 && currentPosition <= bottom && $(this).attr('id') === "sec01") {
+        $('#navigationMenu').find('.navOption').removeClass('Dactive');
+        $('#navigationMenu').find('.navOption').removeClass('Lactive');
+        $('#navigationMenu').find('.navOption').removeClass('DnotActive');
+        $('#navigationMenu').find('.navOption').removeClass('LnotActive');
+        $('#mainHeader').removeClass('LmainHeader');
+        $('#headerHeroLogo1').removeClass('LheaderHeroLogo1');
+        $('#headerHeroLogo2').removeClass('LheaderHeroLogo2');
+        $('#navigationMenu').find('.navOption').addClass('DnotActive');
+        $('#navigationMenu').find('#nav_' + $(this).attr('id')).addClass('Dactive');
+        $('#mainHeader').addClass('DmainHeader');
+        $('#headerHeroLogo1').addClass('DheaderHeroLogo1');
+        $('#headerHeroLogo2').addClass('DheaderHeroLogo2');
+      }
+      if (currentPosition >= top - $(window).height()*.075 && currentPosition <= bottom && $(this).attr('id') === "sec02") {
+        $('#navigationMenu').find('.navOption').removeClass('Dactive');
+        $('#navigationMenu').find('.navOption').removeClass('Lactive');
+        $('#navigationMenu').find('.navOption').removeClass('DnotActive');
+        $('#navigationMenu').find('.navOption').removeClass('LnotActive');
+        $('#mainHeader').removeClass('DmainHeader');
+        $('#headerHeroLogo1').removeClass('DheaderHeroLogo1');
+        $('#headerHeroLogo2').removeClass('DheaderHeroLogo2');
+        $('#navigationMenu').find('.navOption').addClass('LnotActive');
+        $('#navigationMenu').find('#nav_' + $(this).attr('id')).addClass('Lactive');
+        $('#mainHeader').addClass('LmainHeader');
+        $('#headerHeroLogo1').addClass('LheaderHeroLogo1');
+        $('#headerHeroLogo2').addClass('LheaderHeroLogo2');
+      }
+      if (currentPosition >= top - $(window).height()*.075 && currentPosition <= bottom && $(this).attr('id') === "sec03") {
+        $('#navigationMenu').find('.navOption').removeClass('Dactive');
+        $('#navigationMenu').find('.navOption').removeClass('Lactive');
+        $('#navigationMenu').find('.navOption').removeClass('DnotActive');
+        $('#navigationMenu').find('.navOption').removeClass('LnotActive');
+        $('#mainHeader').removeClass('LmainHeader');
+        $('#headerHeroLogo1').removeClass('LheaderHeroLogo1');
+        $('#headerHeroLogo2').removeClass('LheaderHeroLogo2');
+        $('#navigationMenu').find('.navOption').addClass('DnotActive');
+        $('#navigationMenu').find('#nav_' + $(this).attr('id')).addClass('Dactive');
+        $('#mainHeader').addClass('DmainHeader');
+        $('#headerHeroLogo1').addClass('DheaderHeroLogo1');
+        $('#headerHeroLogo2').addClass('DheaderHeroLogo2');
       }
     });
 
@@ -305,17 +344,14 @@ app.controller("mainController", function($scope){
       $('#about').removeClass('aboutNotFixedTop');
       $('#about').removeClass('aboutNotFixedBottom');
       $('#about').addClass('aboutFixed');
-      // console.log("here comes dat boi");
     }
     if (currentPosition < aboutTop) {
       $('#about').removeClass('aboutFixed');
       $('#about').addClass('aboutNotFixedTop');
-      // console.log("o shit wattup");
     }
     if (currentPosition > aboutStickPoint) {
       $('#about').removeClass('aboutFixed');
       $('#about').addClass('aboutNotFixedBottom');
-      // console.log("o shit wattup");
     }
 
     // Remove Down Arrows on Hero After Scrolling Down
@@ -325,10 +361,10 @@ app.controller("mainController", function($scope){
 
     // Sticky Header
     if (currentPosition > $('#hero').outerHeight() + $('#cinemagraphContainer').outerHeight() - $(window).height()*.25) {
-        $('.mainHeader').fadeIn(500);
+        $('#mainHeader').fadeIn(0);
     };
     if (currentPosition < $('#hero').outerHeight() + $('#cinemagraphContainer').outerHeight() - $(window).height()*.25) {
-        $('.mainHeader').fadeOut(500);
+        $('#mainHeader').fadeOut(0);
     };
 
   });
