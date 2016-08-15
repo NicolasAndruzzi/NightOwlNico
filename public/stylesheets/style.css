@@ -1,26 +1,5 @@
-        /*nightOwlNico color palette:
-white, whitesmoke, dimgrey, black, darkgreen rgb(0,100,0) #005500*/
-
-      /*SVG safe greyscale colors:
-white(Safe 16 Hex3) cmyk(0%, 0%, 0%, 0%) #FFFFFF
-whitesmoke cmyk(0%, 0%, 0%, 4%) #F5F5F5
-gainsboro cmyk(0%, 0%, 0%, 14%) #DCDCDC
-lightgrey cmyk(0%, 0%, 0%, 17%) #D3D3D3
-silver(16) cmyk(0%, 0%, 0%, 25%) #C0C0C0
-darkgrey cmyk(0%, 0%, 0%, 34%) #A9A9A9
-grey(16) cmyk(0%, 0%, 0%, 50%) #808080
-dimgrey cmyk(0%, 0%, 0%, 59%) #696969
-(Hex3)	#555555
-(Safe Hex3)	#333333
-black(Safe 16 Hex3) cmyk(0%, 0%, 0%, 100%) #000000*/
-
-
-
-
-                /*:NEW COLORS:*/
-/*Logo Color:  #005500 || rgb(0,33.3%,0) || cmyk(100%, 0, 100%, 66.6%)*/
-
-
+                /*:::COLORS:::*/
+/*Logo Color:  #005500 || rgb(0,85,0) || rgb(0,33.3%,0) || cmyk(100%, 0, 100%, 66.6%) || hsl(120, 100%, 16.7%)*/
 
 /**********************************************          404 Page Begin          **********************************************/
 
@@ -100,7 +79,6 @@ top: 0px;
   -moz-user-select: none;
   -webkit-user-select: none;
   -ms-user-select: none;
-  transition: all 2.5s;
 }
 
 #headerLogoContainer{
@@ -310,12 +288,12 @@ top: 0px;
 /**********************************************          Header (Dark or Light Styling) Begin          **********************************************/
 
 .DmainHeader {
-  background-color: #111;
+  background-color: #191919;
   box-shadow: 0 0 10vh 1vh #000;
 }
 
 .LmainHeader {
-  background-color: #eee;
+  background-color: #e5e5e5;
   box-shadow: 0 0 10vh 1vh #000;
 }
 

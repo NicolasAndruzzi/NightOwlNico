@@ -300,9 +300,9 @@ app.controller("mainController", function($scope){
         $('#mainHeader').removeClass('LmainHeader');
         $('#headerHeroLogo1').removeClass('LheaderHeroLogo1');
         $('#headerHeroLogo2').removeClass('LheaderHeroLogo2');
+        $('#mainHeader').addClass('DmainHeader');
         $('#navigationMenu').find('.navOption').addClass('DnotActive');
         $('#navigationMenu').find('#nav_' + $(this).attr('id')).addClass('Dactive');
-        $('#mainHeader').addClass('DmainHeader');
         $('#headerHeroLogo1').addClass('DheaderHeroLogo1');
         $('#headerHeroLogo2').addClass('DheaderHeroLogo2');
       }
@@ -314,9 +314,9 @@ app.controller("mainController", function($scope){
         $('#mainHeader').removeClass('DmainHeader');
         $('#headerHeroLogo1').removeClass('DheaderHeroLogo1');
         $('#headerHeroLogo2').removeClass('DheaderHeroLogo2');
+        $('#mainHeader').addClass('LmainHeader');
         $('#navigationMenu').find('.navOption').addClass('LnotActive');
         $('#navigationMenu').find('#nav_' + $(this).attr('id')).addClass('Lactive');
-        $('#mainHeader').addClass('LmainHeader');
         $('#headerHeroLogo1').addClass('LheaderHeroLogo1');
         $('#headerHeroLogo2').addClass('LheaderHeroLogo2');
       }
@@ -328,9 +328,9 @@ app.controller("mainController", function($scope){
         $('#mainHeader').removeClass('LmainHeader');
         $('#headerHeroLogo1').removeClass('LheaderHeroLogo1');
         $('#headerHeroLogo2').removeClass('LheaderHeroLogo2');
+        $('#mainHeader').addClass('DmainHeader');
         $('#navigationMenu').find('.navOption').addClass('DnotActive');
         $('#navigationMenu').find('#nav_' + $(this).attr('id')).addClass('Dactive');
-        $('#mainHeader').addClass('DmainHeader');
         $('#headerHeroLogo1').addClass('DheaderHeroLogo1');
         $('#headerHeroLogo2').addClass('DheaderHeroLogo2');
       }
@@ -361,10 +361,20 @@ app.controller("mainController", function($scope){
 
     // Sticky Header
     if (currentPosition > $('#hero').outerHeight() + $('#cinemagraphContainer').outerHeight() - $(window).height()*.25) {
-        $('#mainHeader').fadeIn(0);
+        $('#mainHeader').fadeIn(250, function() {
+          $('#mainHeader').css("transition", "all .5s");
+          $('#headerHeroLogo1').css("transition", "all .5s");
+          $('#headerHeroLogo2').css("transition", "all .5s");
+          $('#navigationMenu').css("transition", "all .5s");
+        });
     };
     if (currentPosition < $('#hero').outerHeight() + $('#cinemagraphContainer').outerHeight() - $(window).height()*.25) {
-        $('#mainHeader').fadeOut(0);
+      $('#mainHeader').fadeOut(250, function() {
+        $('#mainHeader').removeProp("transition");
+        $('#headerHeroLogo1').removeProp("transition");
+        $('#headerHeroLogo2').removeProp("transition");
+        $('#navigationMenu').removeProp("transition");
+      });
     };
 
   });
