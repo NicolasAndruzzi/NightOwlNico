@@ -28,6 +28,7 @@ app.controller("mainController", function($scope){
   $('#sec01').hide();
   $('#sec02').hide();
   $('#sec03').hide();
+  $('#footer').hide();
 
 
   // Moon Hover
