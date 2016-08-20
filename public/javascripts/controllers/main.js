@@ -25,10 +25,10 @@ app.controller("mainController", function($scope){
   // Immediately Hide the Navbar & Slogan
   $('#mainHeader').hide();
   $('#heroSloganContainer').hide();
-  $('#sec01').hide();
-  $('#sec02').hide();
-  $('#sec03').hide();
-  $('#footer').hide();
+  // $('#sec01').hide();
+  // $('#sec02').hide();
+  // $('#sec03').hide();
+  // $('#footer').hide();
 
 
   // Moon Hover
@@ -293,6 +293,20 @@ app.controller("mainController", function($scope){
     $('section').each(function() {
       var top = $(this).offset().top;
       var bottom = top + $(this).outerHeight();
+      if (currentPosition >= top - $(window).height()*.075 && currentPosition <= bottom && $(this).attr('id') === "cinemagraphContainer") {
+        $('#navigationMenu').find('.navOption').removeClass('Dactive');
+        $('#navigationMenu').find('.navOption').removeClass('Lactive');
+        $('#navigationMenu').find('.navOption').removeClass('DnotActive');
+        $('#navigationMenu').find('.navOption').removeClass('LnotActive');
+        $('#mainHeader').removeClass('LmainHeader');
+        $('#headerHeroLogo1').removeClass('LheaderHeroLogo1');
+        $('#headerHeroLogo2').removeClass('LheaderHeroLogo2');
+        $('#mainHeader').addClass('DmainHeader');
+        $('#navigationMenu').find('.navOption').addClass('DnotActive');
+        // $('#navigationMenu').find('#nav_' + $(this).attr('id')).addClass('Dactive');
+        $('#headerHeroLogo1').addClass('DheaderHeroLogo1');
+        $('#headerHeroLogo2').addClass('DheaderHeroLogo2');
+      }
       if (currentPosition >= top - $(window).height()*.075 && currentPosition <= bottom && $(this).attr('id') === "sec01") {
         $('#navigationMenu').find('.navOption').removeClass('Dactive');
         $('#navigationMenu').find('.navOption').removeClass('Lactive');
@@ -363,6 +377,7 @@ app.controller("mainController", function($scope){
     // Sticky Header
     if (currentPosition > $('#hero').outerHeight() + $('#cinemagraphContainer').outerHeight() - $(window).height()*.25) {
         $('#mainHeader').fadeIn(250, function() {
+          // Add CSS transitions after fadeIn
           $('#mainHeader').css("transition", "all .5s");
           $('#headerHeroLogo1').css("transition", "all .5s");
           $('#headerHeroLogo2').css("transition", "all .5s");
@@ -371,6 +386,7 @@ app.controller("mainController", function($scope){
     };
     if (currentPosition < $('#hero').outerHeight() + $('#cinemagraphContainer').outerHeight() - $(window).height()*.25) {
       $('#mainHeader').fadeOut(250, function() {
+        // Remove CSS transitions after fadeOut
         $('#mainHeader').removeProp("transition");
         $('#headerHeroLogo1').removeProp("transition");
         $('#headerHeroLogo2').removeProp("transition");
