@@ -930,6 +930,12 @@ p {
   color: white;
 }
 
+.footerIcon {
+  width: 5vw;
+  height: auto;
+  background-color: grey;
+}
+
 /**********************************************          Footer End          **********************************************/
 
 
