@@ -833,26 +833,59 @@ top: 0px;
   height: 7.5vh;
 }
 
-.subMenuContainer {
+.aboutMenuOption {
   width: 100%;
   height: 33.33vh;
+  font-family: 'Amatic SC', cursive;
+  font-weight: 900;
   /*border: 1px solid white;*/
   /*background-color: red;*/
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 150%;
+  letter-spacing: .33vw;
 }
 
 #why {
   background-color: #500;
+  padding: 1.5vw;
 }
 
 #how {
   background-color: #050;
+  padding: 1.5vw;
 }
 
 #what {
   background-color: #005;
+  padding: 1.5vw;
+}
+
+#subAbout_why {
+  padding-top: 11.25vh;
+  padding-bottom: 11.25vh;
+  min-height: 100vh;
+}
+
+#subAbout_how {
+  padding-top: 11.25vh;
+  padding-bottom: 11.25vh;
+  min-height: 100vh;
+}
+
+#subAbout_what {
+  padding-top: 11.25vh;
+  padding-bottom: 11.25vh;
+  min-height: 100vh;
+}
+
+.howSubTitle {
+  font-style: italic;
+}
+
+.whatIcon {
+  margin: 1vw;
 }
 
 /**********************************************          About End          **********************************************/
@@ -868,31 +901,49 @@ h1 {
   /*text-transform: uppercase;*/
   font-family: 'Amatic SC', cursive;
   text-align: center;
+  font-size: 96px;
+  text-decoration: underline;
   /*font-size: 7.5vw;*/
   /*font-family: "Oswald", sans-serif;*/
   margin: 0;
-  margin-top: 11.25vh;
 }
 
 h2 {
   /*font-size: 2vw;*/
-  font-family: 'Amatic SC', cursive;
+  /*font-family: 'Amatic SC', cursive;*/
+  /*font-size: 28px;*/
+  text-decoration: underline;
+  font-weight: bold;
   margin: 0;
-  margin-bottom: 6vh;
+  margin-top: 10vh;
 }
 
-h3 {
-  font-family: 'Amatic SC', cursive;
-  /*font-size: 3.75vw;*/
+h5 {
+  font-style: italic;
+  letter-spacing: .15vw;
+  word-spacing: .1vw;
+  line-height: 1.5;
+  font-weight: 400;
   margin: 0;
-  /*margin-bottom: 6vh;*/
+  margin-top: 5vh;
+}
+
+h6 {
+  font-style: italic;
+  letter-spacing: .1vw;
+  font-weight: 400;
+  font-weight: bold;
+  margin: 0;
+  margin-top: 2vh;
 }
 
 p {
   /*margin-bottom: 20px;*/
-  font-size: 17px;
-  line-height: 2;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
   margin: 0;
+  margin-top: 3vh;
 }
 
 .row {

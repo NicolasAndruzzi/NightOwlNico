@@ -25,10 +25,10 @@ app.controller("mainController", function($scope){
   // Immediately Hide the Navbar & Slogan
   $('#mainHeader').hide();
   $('#heroSloganContainer').hide();
-  $('#sec01').hide();
-  $('#sec02').hide();
-  $('#sec03').hide();
-  $('#footer').hide();
+  // $('#sec01').hide();
+  // $('#sec02').hide();
+  // $('#sec03').hide();
+  // $('#footer').hide();
 
 
   // Moon Hover
@@ -271,9 +271,17 @@ app.controller("mainController", function($scope){
 
   // Navigation Click Sends to Section
   $('.navOption').click(function() {
-    var target = $(this).attr("data-scrollTo");
+    var navTarget = $(this).attr("data-scrollTo");
     $('html, body').animate({
-        scrollTop: $('#' + target).offset().top
+        scrollTop: $('#' + navTarget).offset().top
+    }, 750);
+  });
+
+  // About Menu Click Sends to Sub-Section
+  $('.aboutMenuOption').click(function() {
+    var aboutTarget = $(this).attr("data-scrollTo");
+    $('html, body').animate({
+        scrollTop: $('#subAbout_' + aboutTarget).offset().top
     }, 750);
   });
 
