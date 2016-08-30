@@ -314,8 +314,14 @@ app.controller("mainController", function($scope){
         // $('#navigationMenu').find('#nav_' + $(this).attr('id')).addClass('Dactive');
         $('#headerHeroLogo1').addClass('DheaderHeroLogo1');
         $('#headerHeroLogo2').addClass('DheaderHeroLogo2');
+        // remove active from about sub-menu Options
+        $('#why').removeClass('aboutSubActive');
+        $('#how').removeClass('aboutSubActive');
+        $('#what').removeClass('aboutSubActive');
       }
-      if (currentPosition >= top - $(window).height()*.075 && currentPosition <= bottom && $(this).attr('id') === "sec01") {
+      // Make Sub About Menu's "why" option Active
+      if ($(this).attr('id') === "sec01" && currentPosition >= $('#subAbout_why').offset().top - $(window).height()*.075 && currentPosition <= $('#subAbout_why').offset().top + $('#subAbout_why').outerHeight()) {
+        console.log("in why");
         $('#navigationMenu').find('.navOption').removeClass('Dactive');
         $('#navigationMenu').find('.navOption').removeClass('Lactive');
         $('#navigationMenu').find('.navOption').removeClass('DnotActive');
@@ -328,6 +334,53 @@ app.controller("mainController", function($scope){
         $('#navigationMenu').find('#nav_' + $(this).attr('id')).addClass('Dactive');
         $('#headerHeroLogo1').addClass('DheaderHeroLogo1');
         $('#headerHeroLogo2').addClass('DheaderHeroLogo2');
+        //remove active from how and what
+        $('#how').removeClass('aboutSubActive');
+        $('#what').removeClass('aboutSubActive');
+        //add active to why
+        $('#why').addClass('aboutSubActive');
+      }
+      // Make Sub About Menu's "how" option Active
+      if ($(this).attr('id') === "sec01" && currentPosition >= $('#subAbout_how').offset().top - $(window).height()*.075 && currentPosition <= $('#subAbout_how').offset().top + $('#subAbout_how').outerHeight()) {
+        console.log("in how");
+        $('#navigationMenu').find('.navOption').removeClass('Dactive');
+        $('#navigationMenu').find('.navOption').removeClass('Lactive');
+        $('#navigationMenu').find('.navOption').removeClass('DnotActive');
+        $('#navigationMenu').find('.navOption').removeClass('LnotActive');
+        $('#mainHeader').removeClass('LmainHeader');
+        $('#headerHeroLogo1').removeClass('LheaderHeroLogo1');
+        $('#headerHeroLogo2').removeClass('LheaderHeroLogo2');
+        $('#mainHeader').addClass('DmainHeader');
+        $('#navigationMenu').find('.navOption').addClass('DnotActive');
+        $('#navigationMenu').find('#nav_' + $(this).attr('id')).addClass('Dactive');
+        $('#headerHeroLogo1').addClass('DheaderHeroLogo1');
+        $('#headerHeroLogo2').addClass('DheaderHeroLogo2');
+        //remove active from why and what
+        $('#why').removeClass('aboutSubActive');
+        $('#what').removeClass('aboutSubActive');
+        //add active to how
+        $('#how').addClass('aboutSubActive');
+      }
+      // Make Sub About Menu's "what" option Active
+      if ($(this).attr('id') === "sec01" && currentPosition >= $('#subAbout_what').offset().top - $(window).height()*.075 && currentPosition <= $('#subAbout_what').offset().top + $('#subAbout_what').outerHeight()) {
+        console.log("in what");
+        $('#navigationMenu').find('.navOption').removeClass('Dactive');
+        $('#navigationMenu').find('.navOption').removeClass('Lactive');
+        $('#navigationMenu').find('.navOption').removeClass('DnotActive');
+        $('#navigationMenu').find('.navOption').removeClass('LnotActive');
+        $('#mainHeader').removeClass('LmainHeader');
+        $('#headerHeroLogo1').removeClass('LheaderHeroLogo1');
+        $('#headerHeroLogo2').removeClass('LheaderHeroLogo2');
+        $('#mainHeader').addClass('DmainHeader');
+        $('#navigationMenu').find('.navOption').addClass('DnotActive');
+        $('#navigationMenu').find('#nav_' + $(this).attr('id')).addClass('Dactive');
+        $('#headerHeroLogo1').addClass('DheaderHeroLogo1');
+        $('#headerHeroLogo2').addClass('DheaderHeroLogo2');
+        //remove active from why and how
+        $('#why').removeClass('aboutSubActive');
+        $('#how').removeClass('aboutSubActive');
+        //add active to what
+        $('#what').addClass('aboutSubActive');
       }
       if (currentPosition >= top - $(window).height()*.075 && currentPosition <= bottom && $(this).attr('id') === "sec02") {
         $('#navigationMenu').find('.navOption').removeClass('Dactive');
@@ -342,6 +395,10 @@ app.controller("mainController", function($scope){
         $('#navigationMenu').find('#nav_' + $(this).attr('id')).addClass('Lactive');
         $('#headerHeroLogo1').addClass('LheaderHeroLogo1');
         $('#headerHeroLogo2').addClass('LheaderHeroLogo2');
+        // remove active from about sub-menu Options
+        $('#why').removeClass('aboutSubActive');
+        $('#how').removeClass('aboutSubActive');
+        $('#what').removeClass('aboutSubActive');
       }
       if (currentPosition >= top - $(window).height()*.075 && currentPosition <= bottom && $(this).attr('id') === "sec03") {
         $('#navigationMenu').find('.navOption').removeClass('Dactive');
