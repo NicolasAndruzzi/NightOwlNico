@@ -1064,10 +1064,10 @@ p {
   color: #e5e5e5;
 }
 
-/*#footer div {
-  margin-top: 0 auto;
-  margin-bottom: 0 auto;
-}*/
+.footerContent {
+  margin-top: auto;
+  margin-bottom: auto;
+}
 
 #footerIconsGroup {
   display: flex;
@@ -1090,6 +1090,9 @@ p {
   transition: all .5s;
 }
 
+#footerCopyright {
+  margin-top: 5vh;
+}
 
 /**********************************************          Footer End          **********************************************/
 
