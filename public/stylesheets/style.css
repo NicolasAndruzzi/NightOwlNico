@@ -1056,16 +1056,40 @@ p {
   height: 50vh;
   background-color: black;
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-content: space-around;
+  /*border: 2px solid yellow;*/
+  text-align: center;
+  color: #e5e5e5;
+}
+
+/*#footer div {
+  margin-top: 0 auto;
+  margin-bottom: 0 auto;
+}*/
+
+#footerIconsGroup {
+  display: flex;
+  justify-content: space-around;
   align-items: center;
-  color: white;
+  /*border: 5px solid orange;*/
 }
 
 .footerIcon {
-  width: 5vw;
+  width: 6vw;
   height: auto;
-  background-color: grey;
+  opacity: .5;
+  transition: all 1.5s;
+  /*background-color: grey;*/
 }
+
+.footerIcon:hover {
+  cursor: pointer;
+  opacity: 1;
+  transition: all .5s;
+}
+
 
 /**********************************************          Footer End          **********************************************/
 
