@@ -911,7 +911,10 @@ top: 0px;
 .whatGroupContainer {
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-between;
+  justify-content: center;
+  align-content: space-between;
+  width: 100%;
+  /*border: 5px solid red*/
 }
 
 .whatIconContainer {
@@ -919,24 +922,40 @@ top: 0px;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin: 1vw;
+  margin: 0;
+  margin-top: 5vh;
+  margin-left: auto;
+  margin-right: auto;
   width: auto;
   height: auto;
-  border: 5px solid green;
+  /*border: 5px solid green;*/
 }
 
-.whatIconContainer .whatIconCaption {
-  display: none;
+.whatIconCaption {
+  opacity: 0;
+  margin-top: 2.5vh;
+  font-weight: 900;
+  font-style: italic;
+  transition: all .75s;
+}
+
+.whatIconSquare {
+  height: auto;
+  width: 15vw;
+}
+
+.whatIconRectangle {
+  height: auto;
+  width: 30vw;
+}
+
+.whatIconContainer:hover {
+  cursor: help;
 }
 
 .whatIconContainer:hover .whatIconCaption{
-  display: block;
-  background-color: red;
-}
-
-.whatIconContainer:hover .whatIcon{
-  height: 225px;
-  width: 225px;
+  transition: all .5s;
+  opacity: 1;
 }
 
 .aboutSubActive {
@@ -959,7 +978,7 @@ h1 {
   /*text-transform: uppercase;*/
   font-family: 'Amatic SC', cursive;
   text-align: center;
-  font-size: 96px;
+  font-size: 122px;
   text-decoration: underline;
   /*font-size: 7.5vw;*/
   /*font-family: "Oswald", sans-serif;*/
@@ -971,10 +990,11 @@ h2 {
   /*font-size: 2vw;*/
   /*font-family: 'Amatic SC', cursive;*/
   /*font-size: 28px;*/
+  font-size: 37px;
   text-decoration: underline;
   font-weight: bold;
   margin: 0;
-  margin-top: 10vh;
+  margin-top: 11vh;
 }
 
 h5 {
