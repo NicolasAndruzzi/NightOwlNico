@@ -968,6 +968,14 @@ top: 0px;
 
 /**********************************************          About End          **********************************************/
 
+.left {
+  text-align: left;
+}
+
+.right {
+  text-align: right;
+}
+
 a {
   text-decoration: none;
 }
@@ -1020,7 +1028,7 @@ h6 {
 p {
   /*margin-bottom: 20px;*/
   font-weight: 500;
-  font-size: 16px;
+  font-size: 22px;
   line-height: 1.5;
   margin: 0;
   margin-top: 3vh;
