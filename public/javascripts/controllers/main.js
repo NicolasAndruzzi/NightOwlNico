@@ -236,6 +236,54 @@ app.controller("mainController", function($scope){
     }
   }
 
+
+  //Contact Form
+  //----------------------------------------------------------------------------------------------
+  $('textarea').blur(function () {
+      $('#sec03 textarea').each(function () {
+          $this = $(this);
+          if ( this.value != '' ) {
+            $this.addClass('focused');
+            $('textarea + label + span').css({'opacity': 1});
+          }
+          else {
+            $this.removeClass('focused');
+            $('textarea + label + span').css({'opacity': 0});
+          }
+      });
+  });
+
+  $('#sec03 .field:first-child input').blur(function () {
+      $('#sec03 .field:first-child input').each(function () {
+          $this = $(this);
+          if ( this.value != '' ) {
+            $this.addClass('focused');
+            $('.field:first-child input + label + span').css({'opacity': 1});
+          }
+          else {
+            $this.removeClass('focused');
+            $('.field:first-child input + label + span').css({'opacity': 0});
+          }
+      });
+  });
+
+  $('#sec03 .field:nth-child(2) input').blur(function () {
+      $('#sec03 .field:nth-child(2) input').each(function () {
+          $this = $(this);
+          if ( this.value != '' ) {
+            $this.addClass('focused');
+            $('.field:nth-child(2) input + label + span').css({'opacity': 1});
+          }
+          else {
+            $this.removeClass('focused');
+            $('.field:nth-child(2) input + label + span').css({'opacity': 0});
+          }
+      });
+  });
+
+  //----------------------------------------------------------------------------------------------
+
+
   // // Mobile Navigation
   // $('.mobile-toggle').click(function() {
   //     if ($('.main_header').hasClass('open-nav')) {
@@ -321,7 +369,7 @@ app.controller("mainController", function($scope){
       }
       // Make Sub About Menu's "why" option Active
       if ($(this).attr('id') === "sec01" && currentPosition >= $('#subAbout_why').offset().top - $(window).height()*.075 && currentPosition <= $('#subAbout_why').offset().top + $('#subAbout_why').outerHeight()) {
-        console.log("in why");
+        // console.log("in why");
         $('#navigationMenu').find('.navOption').removeClass('Dactive');
         $('#navigationMenu').find('.navOption').removeClass('Lactive');
         $('#navigationMenu').find('.navOption').removeClass('DnotActive');
@@ -342,7 +390,7 @@ app.controller("mainController", function($scope){
       }
       // Make Sub About Menu's "how" option Active
       if ($(this).attr('id') === "sec01" && currentPosition >= $('#subAbout_how').offset().top - $(window).height()*.075 && currentPosition <= $('#subAbout_how').offset().top + $('#subAbout_how').outerHeight()) {
-        console.log("in how");
+        // console.log("in how");
         $('#navigationMenu').find('.navOption').removeClass('Dactive');
         $('#navigationMenu').find('.navOption').removeClass('Lactive');
         $('#navigationMenu').find('.navOption').removeClass('DnotActive');
@@ -363,7 +411,7 @@ app.controller("mainController", function($scope){
       }
       // Make Sub About Menu's "what" option Active
       if ($(this).attr('id') === "sec01" && currentPosition >= $('#subAbout_what').offset().top - $(window).height()*.075 && currentPosition <= $('#subAbout_what').offset().top + $('#subAbout_what').outerHeight()) {
-        console.log("in what");
+        // console.log("in what");
         $('#navigationMenu').find('.navOption').removeClass('Dactive');
         $('#navigationMenu').find('.navOption').removeClass('Lactive');
         $('#navigationMenu').find('.navOption').removeClass('DnotActive');
