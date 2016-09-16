@@ -1069,9 +1069,36 @@ p {
 
 /**********************************************          Contact Begin          **********************************************/
 
+/*body {
+  background: #efefef;
+  font-size: 62.5%;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  color: #B6B6B6;
+}*/
+
+/*#sec03 {
+  background: white;
+  margin: 60px auto 120px;
+  border-top: 15px solid #313A3D;
+  text-align: center;
+  padding: 50px 0 110px;
+  width: 80%;
+  max-width: 1100px;
+}
+
+#sec03 h1 {
+  margin-bottom: 40px;
+  font-size: 4em;
+  text-transform: uppercase;
+  font-family: 'Lato', sans-serif;
+  font-weight: 100;
+}*/
+
 form {
   width: 75vw;
   margin: 0 auto;
+  text-align: center;
 }
 
 form .field {
@@ -1081,7 +1108,7 @@ form .field {
 }
 
 form .field label {
-  /*text-transform: uppercase;*/
+  text-transform: uppercase;
   position: absolute;
   top: 0;
   left: 0;
@@ -1125,7 +1152,7 @@ form .field textarea {
   color: #313A3D;
   font-size: 1.4em;
   letter-spacing: 0.05em;
-  /*text-transform: uppercase;*/
+  text-transform: uppercase;
 }
 
 form .field input[type="text"]#msg,
@@ -1175,7 +1202,7 @@ form input[type="submit"] {
   color: white;
   -webkit-appearance: none;
   border: none;
-  /*text-transform: uppercase;*/
+  text-transform: uppercase;
   position: relative;
   padding: 13px 50px;
   font-size: 1.4em;
@@ -1199,6 +1226,11 @@ form input[type="submit"]:focus {
   background: #cd6302;
 }
 
+#checkMark {
+  height: 10px;
+  width: auto;
+}
+
 /**********************************************          Contact End          **********************************************/
 
 
@@ -1206,6 +1238,8 @@ form input[type="submit"]:focus {
 
 #footer {
   /*height: auto;*/
+  background: url("/images/nightSky.jpg") no-repeat center center;
+  background-size: cover;
   background-color: black;
   display: flex;
   flex-direction: column;
@@ -1379,7 +1413,7 @@ form input[type="submit"]:focus {
   }
 
   42% {
-    color: darkslategrey);
+    color: darkslategrey;
   }
 
   56% {
