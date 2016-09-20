@@ -1054,7 +1054,7 @@ p {
 }
 
 #sec03 {
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .dark {
@@ -1085,20 +1085,22 @@ p {
   padding: 50px 0 110px;
   width: 80%;
   max-width: 1100px;
-}
+}*/
 
 #sec03 h1 {
   margin-bottom: 40px;
-  font-size: 4em;
-  text-transform: uppercase;
-  font-family: 'Lato', sans-serif;
-  font-weight: 100;
-}*/
+}
+
+#contactMessage {
+  text-align: center;
+  margin-bottom: 40px;
+}
 
 form {
   width: 75vw;
   margin: 0 auto;
   text-align: center;
+  margin-bottom: 40px;
 }
 
 form .field {
@@ -1108,7 +1110,7 @@ form .field {
 }
 
 form .field label {
-  text-transform: uppercase;
+  /*text-transform: uppercase;*/
   position: absolute;
   top: 0;
   left: 0;
@@ -1125,7 +1127,7 @@ form .field label {
 }
 
 form .field label + span {
-  font-family: 'SSStandard';
+  /*font-family: 'SSStandard';*/
   opacity: 0;
   color: white;
   display: block;
@@ -1152,7 +1154,7 @@ form .field textarea {
   color: #313A3D;
   font-size: 1.4em;
   letter-spacing: 0.05em;
-  text-transform: uppercase;
+  /*text-transform: uppercase;*/
 }
 
 form .field input[type="text"]#msg,
@@ -1202,12 +1204,12 @@ form input[type="submit"] {
   color: white;
   -webkit-appearance: none;
   border: none;
-  text-transform: uppercase;
+  /*text-transform: uppercase;*/
   position: relative;
   padding: 13px 50px;
   font-size: 1.4em;
   letter-spacing: 0.1em;
-  font-family: 'Lato', sans-serif;
+  /*font-family: 'Lato', sans-serif;*/
   font-weight: 300;
   -webkit-transition: all 333ms ease-in-out;
   -moz-transition: all 333ms ease-in-out;
