@@ -941,22 +941,34 @@ top: 0px;
   margin-top: 2.5vh;
   font-weight: 900;
   font-style: italic;
-  transition: all .75s;
+  transition: all 1s;
   color: #222;
 }
 
 .whatIconSquare {
   height: auto;
   width: 15vw;
+  transition: all 1s;
 }
 
 .whatIconRectangle {
   height: auto;
   width: 30vw;
+  transition: all 1s;
 }
 
-.whatIconContainer:hover {
+.whatIconContainer:hover .whatIconRectangle{
   cursor: pointer;
+  -webkit-filter: drop-shadow(0 0 2.5px #000);
+  filter:         drop-shadow(0 0 2.5px #000);
+  transition: all .5s;
+}
+
+.whatIconContainer:hover .whatIconSquare{
+  cursor: pointer;
+  -webkit-filter: drop-shadow(0 0 2.5px #000);
+  filter:         drop-shadow(0 0 2.5px #000);
+  transition: all .5s;
 }
 
 .whatIconContainer:hover .whatIconCaption{
@@ -1011,7 +1023,7 @@ h2 {
   margin-top: 11vh;
 }
 
-h5 {
+h4 {
   font-style: italic;
   letter-spacing: .15vw;
   word-spacing: .1vw;
@@ -1021,7 +1033,7 @@ h5 {
   margin-top: 5vh;
 }
 
-h6 {
+h5 {
   font-style: italic;
   letter-spacing: .1vw;
   font-weight: 400;
@@ -1103,9 +1115,15 @@ p {
 #frontMessage1 {
   text-align: center;
   color: black;
-  font-size: 27.5px;
-  line-height: 20px;
+  font-size: 25px;
+  line-height: 45px;
   text-shadow: 0 0 10px white;
+}
+
+#frontMessage1 a {
+  color: #050;
+  text-decoration: underline;
+  font-size: 30px
 }
 
 #frontMessage2 {
@@ -1251,8 +1269,9 @@ p {
 }
 
 .btn {
-  border: 3px solid #323232;
-  color: #000;
+  border: 3px solid #000;
+  background-color: #f1f1f1;
+  color: #050;
   display: block;
   font-size: 27.5px;
   font-weight: normal;
@@ -1272,47 +1291,34 @@ p {
 /**********************************************          Footer Begin          **********************************************/
 
 #footer {
-  /*height: auto;*/
+  height: 80vh;
   background: url("/images/footerMountains.jpg") no-repeat center bottom;
   background-size: cover;
   background-color: black;
   display: flex;
   flex-direction: column;
   font-family: 'Josefin Sans', sans-serif;
-  /*justify-content: center;*/
-  /*align-content: space-around;*/
+  align-items: center;
+  justify-content: space-between;
   /*border: 2px solid yellow;*/
   text-align: center;
-  color: #e5e5e5;
-}
-
-#footerContent {
-  margin-top: 20vh;
-  margin-bottom: 15vh;
-  /*font-family: 'Amatic SC', cursive;*/
-}
-
-#footerContent button {
-  background-color: #e5e5e5;
-  font-size: 30px;
-}
-
-#footerContent button:hover {
-  cursor: pointer;
+  color: #cccccc;
+  font-size: 15px;
 }
 
 #footerIconsGroup {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin-top: 15vh;
+  margin-top: 5vh;
+  width: 100vw;
   /*border: 5px solid orange;*/
 }
 
 .footerIcon {
   width: 6vw;
   height: auto;
-  opacity: .5;
+  opacity: .75;
   transition: all 1.5s;
   /*background-color: grey;*/
 }
@@ -1320,13 +1326,64 @@ p {
 .footerIcon:hover {
   cursor: pointer;
   opacity: 1;
-  transition: all .5s;
+  -webkit-filter: drop-shadow(0 0 3px white);
+  filter:         drop-shadow(0 0 3px white);
+  transition: all .25s;
+}
+
+#footerQuoteContainer{
+  margin-top: 3vh;
+}
+
+#footerQuote {
+  font-size: 50px;
+  letter-spacing: 3px;
+  word-spacing: 10px;
+  line-height: 50px;
+  font-family: 'Amatic SC', cursive;
+  color: white;
+  font-weight: 900;
+  text-shadow: 0 0 10px black;
+}
+
+#footerAuthor {
+  margin-top: 1.5vh;
+  color: white;
+  font-weight: 900;
+  letter-spacing: 5px;
+  word-spacing: 5px;
+  font-size: 15px;
+  text-shadow: 0 0 5px black;
+}
+
+#buttonLink {
+  width: 125px;
+}
+
+#footer button {
+  background-color: white;
+  height: 35px;
+  color: #191919;
+  width: 125px;
+  border: 1px solid #191919;
+  box-shadow: 0 0 50px black;
+  font-size: 20px;
+  opacity: .95;
+}
+
+#footer button:hover {
+  cursor: pointer;
+}
+
+#footerLocation{
+  font-weight: 900;
+  letter-spacing: 2.5px;
 }
 
 #footerCopyright {
-  margin-top: 10vh;
+  margin-top: 3vh;
+  margin-bottom: 5vh;
   font-style: italic;
-  font-size: 20px;
 }
 
 /**********************************************          Footer End          **********************************************/
