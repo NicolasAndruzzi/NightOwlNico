@@ -959,15 +959,15 @@ top: 0px;
 
 .whatIconContainer:hover .whatIconRectangle{
   cursor: pointer;
-  -webkit-filter: drop-shadow(0 0 2.5px #000);
-  filter:         drop-shadow(0 0 2.5px #000);
+  -webkit-filter: drop-shadow(0 0 1px #000);
+  filter: drop-shadow(0 0 1px #000);
   transition: all .5s;
 }
 
 .whatIconContainer:hover .whatIconSquare{
   cursor: pointer;
-  -webkit-filter: drop-shadow(0 0 2.5px #000);
-  filter:         drop-shadow(0 0 2.5px #000);
+  -webkit-filter: drop-shadow(0 0 1px #000);
+  filter: drop-shadow(0 0 1px #000);
   transition: all .5s;
 }
 
@@ -1113,7 +1113,7 @@ p {
   -o-backface-visibility: hidden;
   backface-visibility: hidden;
   -webkit-filter: drop-shadow(0 0 10px #000);
-  filter:         drop-shadow(0 0 10px #000);
+  filter: drop-shadow(0 0 10px #000);
   /*background-color: green;*/
 }
 
@@ -1274,7 +1274,7 @@ p {
 .btn {
   border: 2.5px solid #000;
   background-color: #f1f1f1;
-  color: #050;
+  color: #000;
   display: block;
   font-size: 27.5px;
   font-weight: normal;
@@ -1284,10 +1284,12 @@ p {
   text-align: center;
   text-decoration: none;
   width: 100%;
-  text-shadow: 0 0 10px white;
   box-shadow: 0 0 5px #050;
 }
 
+#submitButton:hover {
+  cursor: pointer;
+}
 
 /**********************************************          Contact End          **********************************************/
 
@@ -1332,7 +1334,7 @@ p {
   cursor: pointer;
   opacity: 1;
   -webkit-filter: drop-shadow(0 0 3px white);
-  filter:         drop-shadow(0 0 3px white);
+  filter: drop-shadow(0 0 3px white);
   transition: all .25s;
 }
 
