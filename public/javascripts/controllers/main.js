@@ -239,47 +239,16 @@ app.controller("mainController", function($scope){
 
   //Contact Form
   //----------------------------------------------------------------------------------------------
-  $('textarea').blur(function () {
-      $('#sec03 textarea').each(function () {
-          $this = $(this);
-          if ( this.value != '' ) {
-            $this.addClass('focused');
-            $('textarea + label + span').css({'opacity': 1});
-          }
-          else {
-            $this.removeClass('focused');
-            $('textarea + label + span').css({'opacity': 0});
-          }
-      });
+
+  $('.flip').click(function(){
+    $('.splitOwlFace').hide();
+    $('.cont-flip').toggleClass('flipped');
+    return false;
   });
 
-  $('#sec03 .field:first-child input').blur(function () {
-      $('#sec03 .field:first-child input').each(function () {
-          $this = $(this);
-          if ( this.value != '' ) {
-            $this.addClass('focused');
-            $('.field:first-child input + label + span').css({'opacity': 1});
-          }
-          else {
-            $this.removeClass('focused');
-            $('.field:first-child input + label + span').css({'opacity': 0});
-          }
-      });
-  });
-
-  $('#sec03 .field:nth-child(2) input').blur(function () {
-      $('#sec03 .field:nth-child(2) input').each(function () {
-          $this = $(this);
-          if ( this.value != '' ) {
-            $this.addClass('focused');
-            $('.field:nth-child(2) input + label + span').css({'opacity': 1});
-          }
-          else {
-            $this.removeClass('focused');
-            $('.field:nth-child(2) input + label + span').css({'opacity': 0});
-          }
-      });
-  });
+  $('.close').click(function(){
+    $('.splitOwlFace').show();
+  })
 
   //----------------------------------------------------------------------------------------------
 
