@@ -1088,7 +1088,7 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: red;
+  /*background-color: red;*/
 }
 
 #frontContainer {
@@ -1096,8 +1096,8 @@ p {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  text-shadow: 0 0 10px black;
-  background-color: blue;
+  /*text-shadow: 0 0 10px red;*/
+  /*background-color: blue;*/
   -webkit-backface-visibility: hidden;
   -moz-backface-visibility: hidden;
   -o-backface-visibility: hidden;
@@ -1114,7 +1114,7 @@ p {
   backface-visibility: hidden;
   -webkit-filter: drop-shadow(0 0 10px #000);
   filter:         drop-shadow(0 0 10px #000);
-  background-color: green;
+  /*background-color: green;*/
 }
 
 #frontMessage1 {
