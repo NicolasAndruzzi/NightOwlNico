@@ -803,8 +803,8 @@ top: 0px;
   position: relative;
   width: 56vw;
   float: right;
-  padding-left: 4vw;
-  padding-right: 4vw;
+  padding-left: 5vw;
+  padding-right: 5vw;
   top: 0;
   right: 0;
   text-align: center;
@@ -901,6 +901,7 @@ top: 0px;
 
 #subAbout_how img {
   width: 80%;
+  height: 5vh;
   margin-top: 7vh;
 }
 
@@ -985,6 +986,38 @@ top: 0px;
 
 /**********************************************          About End          **********************************************/
 
+/**********************************************          Portfolio End          **********************************************/
+
+#sec02 {
+  overflow: hidden;
+}
+
+#creationsContainer {
+  background-color: red;
+  margin-top: 6vh;
+  margin-bottom: 6vh;
+  max-width: 100vw;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+#creationsContainer a {
+  height: 30vw;
+  width: 50vw;
+  /*margin: 0;*/
+}
+
+#creationsContainer img {
+  height: 30vw;
+  width: 50vw;
+  background-color: orange;
+  /*margin: 0;*/
+}
+
+/**********************************************          Portfolio End          **********************************************/
+
 .left {
   text-align: left;
 }
@@ -1020,11 +1053,11 @@ h2 {
   text-decoration: underline;
   font-weight: bold;
   margin: 0;
-  margin-top: 11vh;
+  margin-top: 6vh;
 }
 
 h4 {
-  font-style: italic;
+  /*font-style: italic;*/
   letter-spacing: .15vw;
   word-spacing: .1vw;
   line-height: 1.5;
@@ -1055,20 +1088,14 @@ p {
   font-family: 'Josefin Sans', sans-serif;
   font-weight: 400;
   -webkit-font-smoothing: antialiased;
-  width: 100vw;
   /*margin: 0 auto;*/
   min-height: 100vh;
   height: auto;
   position: relative;
   overflow-y: auto;
+  width: 100vw;
   /*padding: 0 2%;*/
   /*border: 5px solid blue;*/
-}
-
-#sec03 {
-  height: 100vh;
-  /*background-color: pink;*/
-  overflow: hidden;
 }
 
 .dark {
@@ -1082,6 +1109,12 @@ p {
 }
 
 /**********************************************          Contact Begin          **********************************************/
+
+#sec03 {
+  height: 100vh;
+  /*background-color: pink;*/
+  overflow: hidden;
+}
 
 #cont-container {
   height: 67.5vh;
