@@ -247,7 +247,7 @@ app.controller("mainController", function($scope){
   });
 
   $('.close').click(function(){
-    $('.splitOwlFace').show();
+    $('.splitOwlFace').fadeIn(1000);
   })
 
   //----------------------------------------------------------------------------------------------
@@ -457,7 +457,7 @@ app.controller("mainController", function($scope){
     }
 
     // Sticky Header
-    if (currentPosition > $('#hero').outerHeight() + $('#cinemagraphContainer').outerHeight() - $(window).height()*.25) {
+    if (currentPosition > $('#hero').outerHeight() + $('#cinemagraphContainer').outerHeight() - $(window).height()*.65) {
         $('#mainHeader').fadeIn(250, function() {
           // Add CSS transitions after fadeIn
           $('#mainHeader').css("transition", "all .5s");
@@ -466,7 +466,7 @@ app.controller("mainController", function($scope){
           $('#navigationMenu').css("transition", "all .5s");
         });
     };
-    if (currentPosition < $('#hero').outerHeight() + $('#cinemagraphContainer').outerHeight() - $(window).height()*.25) {
+    if (currentPosition < $('#hero').outerHeight() + $('#cinemagraphContainer').outerHeight() - $(window).height()*.65) {
       $('#mainHeader').fadeOut(250, function() {
         // Remove CSS transitions after fadeOut
         $('#mainHeader').removeProp("transition");

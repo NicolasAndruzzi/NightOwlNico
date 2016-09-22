@@ -93,21 +93,15 @@ top: 0px;
   margin-left: 3vw;
   width: 30vw;
   /*margin-right: 1.5vw;*/
-  transition: all .5s;
+  transition: all 0s;
   height: 100%;
   /*font-size: 2.5vw;*/
-}
-
-#headerLogoContainer:hover {
-  cursor: pointer;
-  letter-spacing: .15vw;
-  transition: all .5s;
-  /*font-size: 3.5vw;*/
 }
 
 #headerHeroLogo1 {
   font-family: 'Amatic SC', cursive;
   font-weight: 100;
+  transition: all 0s;
 }
 
 #headerOwlFaceInLogo{
@@ -127,18 +121,24 @@ top: 0px;
 #headerHeroLogo2 {
   font-family: 'Amatic SC', cursive;
   font-weight: 100;
+  transition: all 0s;
 }
 
-#headerLogoContainer:hover #headerHeroLogo1 {
-  font-weight: 900;
-  /*transition: all 0.s;*/
+#headerLogoContainer:hover {
+  cursor: pointer;
+  letter-spacing: .15vw;
+  transition: all 0s;
+}
+
+/*#headerLogoContainer:hover #headerHeroLogo1 {
+  font-weight: bolder;
+  transition: all 0s;
 }
 
 #headerLogoContainer:hover #headerHeroLogo2 {
-  font-weight: 900;
-  /*transition: all 0.s;*/
-  /*font-size: 3.5vw;*/
-}
+  font-weight: bolder;
+  transition: all 0s;
+}*/
 
 #headerLogoLetter {
 
@@ -1357,11 +1357,19 @@ p {
 #footerAuthor {
   margin-top: 2vh;
   color: white;
-  font-weight: 900;
-  letter-spacing: 5px;
-  word-spacing: 5px;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+  word-spacing: 0px;
   font-size: 15px;
   text-shadow: 0 0 5px black;
+  font-style: italic;
+}
+
+#footerAuthorDecoration {
+  color: #fff;
+  font-weight: 900;
+  font-size: 20px;
+  font-style: normal;
 }
 
 #buttonLink {
