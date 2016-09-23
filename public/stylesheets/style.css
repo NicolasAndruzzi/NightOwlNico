@@ -1057,7 +1057,7 @@ h2 {
 }
 
 h4 {
-  /*font-style: italic;*/
+  font-style: italic;
   letter-spacing: .15vw;
   word-spacing: .1vw;
   line-height: 1.5;
@@ -1067,7 +1067,7 @@ h4 {
 }
 
 h5 {
-  font-style: italic;
+  /*font-style: italic;*/
   letter-spacing: .1vw;
   font-weight: 400;
   font-weight: bold;
