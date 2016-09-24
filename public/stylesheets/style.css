@@ -989,29 +989,31 @@ top: 0px;
 /**********************************************          Portfolio End          **********************************************/
 
 #sec02 {
-  overflow: hidden;
+  /*overflow: hidden;*/
 }
 
 #creationsContainer {
-  /*background-color: red;*/
+  min-height: 57.5vh;
+  background-color: red;
   margin-top: 6vh;
   margin-bottom: 6vh;
-  max-width: 100vw;
+  width: 100vw;
   display: flex;
   flex-flow: row wrap;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
+  align-content: space-around;
 }
 
 #creationsContainer a {
-  height: 40vw;
-  width: 50vw;
+  height: 25vw;
+  width: 25vw;
   /*margin: 0;*/
 }
 
 #creationsContainer img {
-  height: 40vw;
-  width: 50vw;
+  height: 25vw;
+  width: 25vw;
   /*background-color: orange;*/
   /*margin: 0;*/
 }
@@ -1063,7 +1065,7 @@ h4 {
   line-height: 1.5;
   font-weight: 400;
   margin: 0;
-  margin-top: 5vh;
+  margin-top: 2.5vh;
 }
 
 h5 {
