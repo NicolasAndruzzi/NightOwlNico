@@ -994,7 +994,7 @@ top: 0px;
 
 #creationsContainer {
   min-height: 57.5vh;
-  background-color: red;
+  /*background-color: red;*/
   margin-top: 6vh;
   margin-bottom: 6vh;
   width: 100vw;
@@ -1008,12 +1008,18 @@ top: 0px;
 #creationsContainer a {
   height: 25vw;
   width: 25vw;
+  background-color: #2f2f2f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /*border: 1px solid white;*/
   /*margin: 0;*/
 }
 
 #creationsContainer img {
-  height: 25vw;
-  width: 25vw;
+  height: 75%;
+  width: 75%;
+  /*border: 1px solid blue;*/
   /*background-color: orange;*/
   /*margin: 0;*/
 }
