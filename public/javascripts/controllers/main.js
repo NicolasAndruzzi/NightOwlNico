@@ -163,6 +163,7 @@ app.controller("mainController", function($scope){
     "Meditation",
     "Triathalons",
     "Technology",
+    "Science",
     "Dancing",
     "Martial Arts",
     "Dog Training",
@@ -215,11 +216,16 @@ app.controller("mainController", function($scope){
     "Famous Quotes",
     "Traveling",
     "Waterbending",
-    "Hackathons"
-    // "",
+    "Waterbending",
+    "Hackathons",
+    "Outer Space",
+    "Movies",
+    "Cartoons",
+    "The Moon"
+    // "xxxxxxxxxxxxTESTxxxxxxxxxxxx"
     // "",
   ];
-  var lovesLoop = setInterval(looper, 600);
+  var lovesLoop = setInterval(looper, 700);
   var i = 0;
   var loves = originalLoves.slice();
   $('#loveRotate').text(loves[Math.floor(Math.random() * loves.length)])
