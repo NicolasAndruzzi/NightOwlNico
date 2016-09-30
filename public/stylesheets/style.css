@@ -1180,6 +1180,7 @@ p {
   margin-top: 66px;
   margin-bottom: 66px;
   text-shadow: 0 0 10px white;
+  /*background-color: blue;*/
 }
 
 #frontMessage2 span{
@@ -1209,6 +1210,7 @@ p {
   transform-style: preserve-3d;
   height: 100%;
   width: 100%;
+  /*background-color: red;*/
 }
 
 .cont-contactBtn .cont-flip .front, .cont-contactBtn .cont-flip .back {
@@ -1227,11 +1229,14 @@ p {
   background-image: url(/images/pattern.jpg);
   background-position: center center;
   background-size: cover;
+  box-shadow: 0 0 25px black;
+}
+
+#cont-center {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 0 25px black;
 }
 
 .cont-contactBtn .cont-flip .back {
@@ -1249,6 +1254,8 @@ p {
 
 .cont-contactBtn .btn {
   /*margin-top: 155px;*/
+  letter-spacing: .25vw;
+  word-spacing: 1vw;
 }
 
 .cont-contactBtn .cont-flip.flipped {
@@ -1272,6 +1279,13 @@ p {
 }
 
 .cont-contactBtn .contact-form input[type="text"] {
+  float: left;
+  margin-bottom: 8px;
+  padding-left: 3%;
+  width: 44.9%;
+}
+
+.cont-contactBtn .contact-form input[type="email"] {
   float: left;
   margin-bottom: 8px;
   padding-left: 3%;

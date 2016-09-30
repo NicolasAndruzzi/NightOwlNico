@@ -25,10 +25,10 @@ app.controller("mainController", function($scope){
   // Immediately Hide the Navbar & Slogan
   $('#mainHeader').hide();
   $('#heroSloganContainer').hide();
-  $('#sec01').hide();
-  $('#sec02').hide();
-  $('#sec03').hide();
-  $('#footer').hide();
+  // $('#sec01').hide();
+  // $('#sec02').hide();
+  // $('#sec03').hide();
+  // $('#footer').hide();
 
 
   // Moon Hover
@@ -247,7 +247,7 @@ app.controller("mainController", function($scope){
   //----------------------------------------------------------------------------------------------
 
   $('.flip').click(function(){
-    $('.splitOwlFace').hide();
+    $('.splitOwlFace').fadeOut(100);
     $('.cont-flip').toggleClass('flipped');
     return false;
   });
@@ -256,6 +256,14 @@ app.controller("mainController", function($scope){
     $('.splitOwlFace').fadeIn(1000);
   })
 
+  $('#submitButton').click(function() {
+    console.log('this');
+    console.log('fucking');
+    console.log('works');
+    $('.splitOwlFace').fadeIn(1000);
+    $('.cont-flip').toggleClass('flipped');
+    return false;
+  });
   //----------------------------------------------------------------------------------------------
 
 
