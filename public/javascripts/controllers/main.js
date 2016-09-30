@@ -266,7 +266,6 @@ app.controller("mainController", function($scope){
   });
   //----------------------------------------------------------------------------------------------
 
-
   // // Mobile Navigation
   // $('.mobile-toggle').click(function() {
   //     if ($('.main_header').hasClass('open-nav')) {
