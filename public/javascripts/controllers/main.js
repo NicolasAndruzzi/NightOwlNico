@@ -1,4 +1,4 @@
-app.controller("mainController", function($scope){
+app.controller("mainController", function($scope, $http, $filter){
   console.log("---------------------------------------");
   console.log("███╗   ██╗██╗ ██████╗ ██╗  ██╗████████╗");
   console.log("████╗  ██║██║██╔════╝ ██║  ██║╚══██╔══╝");
@@ -256,14 +256,43 @@ app.controller("mainController", function($scope){
     $('.splitOwlFace').fadeIn(1000);
   })
 
-  $('#submitButton').click(function() {
-    console.log('this');
-    console.log('fucking');
-    console.log('works');
-    $('.splitOwlFace').fadeIn(1000);
-    $('.cont-flip').toggleClass('flipped');
-    return false;
-  });
+  // $('#submitButton').click(function() {
+  //   console.log('this');
+  //   console.log('fucking');
+  //   console.log('works');
+  //   $('.splitOwlFace').fadeIn(1000);
+  //   $('.cont-flip').toggleClass('flipped');
+  //   return false;
+  // });
+
+  $scope.email = {};
+
+  //Will I need to initialize non-required fields in the email object in case they are left blank?  (company & telephone)
+
+  $scope.submitEmail = function() {
+    console.log("TEST");
+    console.log($scope.email);
+
+    //Add a timestamp property to the email object when this function is called
+    var currentTime = Date.now();
+    $scope.email.senderTimestamp = $filter('date')(currentTime, 'medium');
+
+    //Request
+    $http.post('/sendMeEmail', $scope.email)
+    .success(function(data, status) {
+       console.log("Sent ok");
+       //Re-Flip The Div
+       //remove all text and images and buttons from that side of the div
+       //Insert: Your email has been delivered and I will get back to you soon
+    })
+    .error(function(data, status) {
+       console.log("Error");
+       //Re-Flip The Div
+       //remove all text and images and buttons from that side of the div
+       //Insert: Sorry, your email has NOT been delivered please email me directly at Nico@NightOwlNico.com
+    })
+  };
+
   //----------------------------------------------------------------------------------------------
 
   // // Mobile Navigation
