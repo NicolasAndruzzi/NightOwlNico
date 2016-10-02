@@ -45,12 +45,12 @@
       <div id="loveRotate"></div>
     </div>
 
-    <!-- <div id="textIntro">
+    <div id="textIntro">
       This Site Is Currently Getting a
       <br>complete UX-UI Redesign.
-      <br>Come back October 3rd
+      <br>Come back October 10th
       <br>to See What I Can Do!
-    </div> -->
+    </div>
 
   </section>
 
@@ -268,10 +268,10 @@
             <a href="#" class="flip close"></a>
             <form id="contact-form" name="contactForm" ng-submit="contactForm.$valid && submitEmail()" novalidate>
               <input id="gutter" type="text" placeholder="Name*" name="name" ng-model="email.senderName" ng-class="{redValidate : submitted}" required autocomplete="off">
-              <input type="email" placeholder="Email*" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,10}$" name="email" ng-model="email.senderEmail" ng-class="{redValidate : submitted}" required autocomplete="off">
+              <input type="email" placeholder="Email*" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$" name="email" ng-model="email.senderEmail" ng-class="{redValidate : submitted}" required autocomplete="off">
               <input id="gutter" type="text" placeholder="Company" name="company" ng-model="email.senderCompany" autocomplete="off">
-              <input type="tel" placeholder="Telephone" pattern="^\(?\d{3}\)?[- ]?\d{3}[- ]?\d{4}$" name="telephone" ng-model="email.senderTelephone" autocomplete="off">
-              <!-- <input type="tel" placeholder="Telephone" pattern="(?:\(\d{3}\)|\d{3})[- ]?\d{3}[- ]?\d{4}" name="telephone" ng-model="email.senderTelephone" autocomplete="off"> -->
+              <input type="tel" placeholder="Telephone" name="telephone" ng-model="email.senderTelephone" autocomplete="off">
+              <!-- <input type="tel" placeholder="Telephone" pattern="^([0-9\(\)\/\+ \-]*)$" name="telephone" ng-model="email.senderTelephone" autocomplete="off"> -->
               <textarea type="text" placeholder="Leave a message*" name="message" ng-model="email.senderMessage" ng-class="{redValidate : submitted}" required autocomplete="off"></textarea>
               <input ng-click="submitted=true" id="submitButton" type="submit" value="Send"><span ng-show="submitted && contactForm.$invalid" style="color:red; font-weight:bolder;">&nbsp;&nbsp;&nbsp;&nbsp;Please fill out all required* fields before sending ::: (I solemly swear not to spam your email)</span>
             </form>
