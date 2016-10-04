@@ -1118,23 +1118,128 @@ p {
 
 /**********************************************          Project Page Begin          **********************************************/
 
-.projectHeader {
+.projectRow {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  /*margin: 0 auto;*/
+  min-height: 100vh;
+  height: auto;
+  position: relative;
+  overflow-y: auto;
+  width: 100vw;
+  padding-left: 10vw;
+  padding-right: 10vw;
+  /*padding: 0 2%;*/
+  /*border: 5px solid blue;*/
+}
+
+#projectLeftColumn {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 10vw;
+  /*background-color: red;*/
+  z-index: 100;
+  display: flex;
+  align-items: center;
   justify-content: center;
 }
 
-#projectHeaderBack {
-  float: left;
+#projectLeftTop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 20vh;
+  width: 10vw;
+  /*background-color: blue;*/
+  z-index: 200;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-#projectHeaderTitle {
-  /*margin-left: auto;
-  margin-right: auto;*/
+#projectRightColumn {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 10vw;
+  /*background-color: red;*/
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-#projectHeaderNext {
-  float: right;
+#projectRightTop {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 20vh;
+  width: 10vw;
+  /*background-color: blue;*/
+  z-index: 200;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
+#projectRightTop div {
+  margin: .5vw;
+  color: white;
+}
+
+#projectBack {
+  /*background-color: orange;*/
+  width: 6vw;
+  height: 6vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#projectBackArrow {
+  width: 3vw;
+}
+
+#projectPrevious {
+  /*background-color: orange;*/
+  width: 4vw;
+  height: 5vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#projectNext {
+  /*background-color: orange;*/
+  width: 4vw;
+  height: 5vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#projectSideArrow {
+  width: 2vw;
+}
+
+.rowContentDark {
+  border-left: 1px solid grey;
+  border-right: 1px solid grey;
+  width: 80vw;
+  min-height: 100vh;
+}
+
+.rowContentLight {
+  border-left: 1px solid grey;
+  border-right: 1px solid grey;
+  width: 80vw;
+  min-height: 100vh;
+}
 
 
 /**********************************************          Project Page End          **********************************************/
