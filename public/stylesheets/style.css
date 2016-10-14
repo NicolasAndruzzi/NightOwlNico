@@ -1033,15 +1033,31 @@ top: 0px;
   transition: .3s ease-in-out;
 }
 
-#creationsContainer span {
-  /*position: absolute;
-  background-color: red;*/
+#creationsContainer div {
+  position: absolute;
+  /*background-color: red;*/
+  width: 25vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  opacity: 0;
+  text-decoration: none;
+  color: white;
+  font-size: 5vw;
+  text-align: center;
+  text-shadow: 0 0 5px black;
+}
+
+#creationsContainer div span{
+  font-size: 2vw;
 }
 
 #creationsContainer a:hover{
   border-left: 1px solid black;
   border-right: 1px solid black;
   cursor: pointer;
+  background-color: black;
 }
 
 #creationsContainer a:hover img {
@@ -1049,6 +1065,10 @@ top: 0px;
 	transform: scale(.75);
 	-webkit-filter: grayscale(100%) blur(3px);
 	filter: grayscale(100%) blur(3px);
+}
+
+#creationsContainer a:hover div{
+  opacity: 1;
 }
 
 /**********************************************          Portfolio End          **********************************************/
