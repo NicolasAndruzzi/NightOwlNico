@@ -25,10 +25,10 @@ app.controller("mainController", function($scope, $http, $filter){
   // Immediately Hide the Navbar & Slogan
   $('#mainHeader').hide();
   $('#heroSloganContainer').hide();
-  // $('#sec01').hide();
-  // $('#sec02').hide();
-  // $('#sec03').hide();
-  // $('#footer').hide();
+  $('#sec01').hide();
+  $('#sec02').hide();
+  $('#sec03').hide();
+  $('#footer').hide();
 
 
   // Moon Hover
