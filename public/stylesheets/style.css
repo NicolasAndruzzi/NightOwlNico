@@ -1015,8 +1015,8 @@ top: 0px;
   /*border: 1px solid white;*/
   /*margin: 0;*/
   box-sizing: border-box;
-   -moz-box-sizing: border-box;
-   -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
 }
 
 #creationsContainer img {
@@ -1029,8 +1029,8 @@ top: 0px;
   filter: grayscale(0) blur(0);
   -webkit-transform: scale(1);
   transform: scale(1);
-  -webkit-transition: .3s ease-in-out;
-  transition: .3s ease-in-out;
+  -webkit-transition: .33s ease-in-out;
+  transition: .33s ease-in-out;
 }
 
 #creationsContainer div {
@@ -1046,7 +1046,7 @@ top: 0px;
   color: white;
   font-size: 5vw;
   text-align: center;
-  text-shadow: 0 0 5px black;
+  text-shadow: white 0 0 1vw;
 }
 
 #creationsContainer div span{
@@ -1054,10 +1054,10 @@ top: 0px;
 }
 
 #creationsContainer a:hover{
-  border-left: 1px solid black;
-  border-right: 1px solid black;
   cursor: pointer;
   background-color: black;
+  -webkit-transition: .66s ease-in-out;
+  transition: .66s ease-in-out;
 }
 
 #creationsContainer a:hover img {
@@ -1069,6 +1069,7 @@ top: 0px;
 
 #creationsContainer a:hover div{
   opacity: 1;
+  text-shadow: black 0 0 1vw;
 }
 
 /**********************************************          Portfolio End          **********************************************/
