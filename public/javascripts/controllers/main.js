@@ -22,6 +22,7 @@ app.controller("mainController", function($scope, $http, $filter){
   console.log("╚═╝  ╚═══╝╚═╝ ╚═════╝ ╚═════╝");
   console.log("---------------------------------------");
 
+
   // Immediately Hide the Navbar & Slogan
   $('#mainHeader').hide();
   $('#heroSloganContainer').hide();
