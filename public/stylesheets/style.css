@@ -1303,17 +1303,59 @@ p {
   flex-direction: column;
 }
 
-.rowContentDark img {
+.projectHeroImg {
  width: 25vw;
+ height: 25vw;
 }
 
-.rowContentLight img {
+.projectHeroImg {
   width: 25vw;
+  height: 25vw;
 }
 
 .projectHeroName {
   font-size: 5vw;
 }
+
+#projectHeroTop {
+  margin-bottom: 2.5vh;
+}
+
+#projectHeroBottom {
+  margin-top: 5vh;
+  font-size: 2.5vw;
+  /*background-color: orange;*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.projectHeroBottomImg {
+  transition: all 1s;
+  height: 5vh;
+  width: 5vh;
+  opacity: .75;
+  /*background-color: blue;*/
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  margin-left: 15vw;
+  margin-right: 15vw;
+}
+
+#projectHeroBottom a {
+  color: white;
+  text-decoration: none;
+}
+
+#projectHeroBottom a:hover .projectHeroBottomImg {
+  -webkit-filter: drop-shadow(0 0 5px #fff);
+  filter: drop-shadow(0 0 5px #fff);
+  transition: all .5s;
+  opacity: 1;
+}
+
+
 
 
 /**********************************************          Project Page End          **********************************************/
