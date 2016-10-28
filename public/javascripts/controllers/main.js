@@ -497,10 +497,12 @@ app.controller("mainController", function($scope, $http, $filter){
     }
     if (currentPosition < aboutTop) {
       $('#about').removeClass('aboutFixed');
+      $('#about').removeClass('aboutNotFixedBottom');
       $('#about').addClass('aboutNotFixedTop');
     }
     if (currentPosition > aboutStickPoint) {
       $('#about').removeClass('aboutFixed');
+      $('#about').removeClass('aboutNotFixedTop');
       $('#about').addClass('aboutNotFixedBottom');
     }
 
