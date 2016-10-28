@@ -1008,15 +1008,17 @@ top: 0px;
 #creationsContainer a {
   height: 25vw;
   width: 25vw;
-  background-color: #cccccc;
+  /*background-color: #ccc;*/
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid black;
+  border: 1px solid #111;
   /*margin: 0;*/
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
+  background: -webkit-radial-gradient(50%,white,#111);
+  background: radial-gradient(at 50%,white,#111);
 }
 
 #creationsContainer img {
@@ -1410,39 +1412,6 @@ p {
   /*background-color: green;*/
 }
 
-#frontMessage1 {
-  text-align: center;
-  color: black;
-  font-size: 25px;
-  line-height: 45px;
-  text-shadow: 0 0 10px white;
-}
-
-#frontMessage1 a {
-  color: #050;
-  text-decoration: underline;
-  font-size: 30px;
-  -webkit-user-select: all;  /* Chrome all / Safari all */
-  -moz-user-select: all;     /* Firefox all */
-  -ms-user-select: all;      /* IE 10+ */
-  user-select: all;          /* Likely future */
-}
-
-#frontMessage2 {
-  text-align: center;
-  color: black;
-  font-size: 22px;
-  font-weight: 900;
-  margin-top: 66px;
-  margin-bottom: 66px;
-  text-shadow: 0 0 10px white;
-  /*background-color: blue;*/
-}
-
-#frontMessage2 span{
-  font-size: 35px;
-}
-
 .cont-contactBtn {
   height: 55vh;
   margin: 0 auto;
@@ -1493,6 +1462,73 @@ p {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+#frontMessage1 {
+  text-align: center;
+  color: black;
+  font-size: 25px;
+  line-height: 45px;
+  text-shadow: 0 0 10px white;
+}
+
+#frontMessage1 a {
+  color: #050;
+  text-decoration: underline;
+  font-size: 30px;
+  -webkit-user-select: all;  /* Chrome all / Safari all */
+  -moz-user-select: all;     /* Firefox all */
+  -ms-user-select: all;      /* IE 10+ */
+  user-select: all;          /* Likely future */
+}
+
+#frontMessage2 {
+  text-align: center;
+  color: black;
+  font-size: 22px;
+  font-weight: 900;
+  margin-top: 66px;
+  margin-bottom: 66px;
+  text-shadow: 0 0 10px white;
+  /*background-color: blue;*/
+}
+
+#frontMessage2 span{
+  font-size: 35px;
+}
+
+#frontMessage4 {
+  /*margin-bottom: 5vh;*/
+  text-decoration: underline;
+  text-align: center;
+  color: black;
+  font-size: 3vw;
+  font-weight: 900;
+  text-shadow: 0 0 10px white;
+  /*background-color: grey;*/
+}
+
+#frontMessage5 {
+  margin-top: 7.5vh;
+  margin-bottom: 1vh;
+  font-style: italic;
+  text-align: center;
+  color: black;
+  font-size: 2vw;
+  font-weight: 300;
+  text-shadow: 0 0 10px white;
+  /*background-color: green;*/
+}
+
+#frontMessage5 span {
+  font-weight: 700;
+  color: #050;
+  /*background-color: blue;*/
+}
+
+#frontMessage6 {
+  width: 10vw;
+  height: auto;
 }
 
 .cont-contactBtn .cont-flip .back {

@@ -274,6 +274,16 @@ app.controller("mainController", function($scope, $http, $filter){
     console.log("TEST");
     console.log($scope.email);
 
+    //Flip div so user has feedback that his button click did something
+    $('.cont-flip').toggleClass('flipped');
+    $('.splitOwlFace').fadeIn(1000);
+    $('#frontMessage1').remove();
+    $('#frontMessage2').remove();
+    $('#frontMessage3').remove();
+    $('#cont-center').html( "<div id='frontMessage4'>Thanks for reaching out!</div><div id='frontMessage5'><span>Owl</span> get back to you within</div><img id='frontMessage6' src='/images/48hour.png' alt='48 Hours' />" );
+    // $('#cont-center').html( "<div id='frontMessage5'><i>I'll get back to you within</i></div>" );
+    // $('#cont-center').html( "<div id='frontMessage6'><i>48 hours</i></div>" );
+
     //Add a timestamp property to the email object when this function is called
     var currentTime = Date.now();
     $scope.email.senderTimestamp = $filter('date')(currentTime, 'medium');
