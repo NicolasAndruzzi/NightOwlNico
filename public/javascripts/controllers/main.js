@@ -267,12 +267,13 @@ app.controller("mainController", function($scope, $http, $filter){
   // });
 
   $scope.email = {};
+  $scope.emailPackage = {};
 
   //Will I need to initialize non-required fields in the email object in case they are left blank?  (company & telephone)
 
   $scope.submitEmail = function() {
-    console.log("TEST");
-    console.log($scope.email);
+    // console.log("TEST");
+    // console.log($scope.email);
 
     //Flip div so user has feedback that his button click did something
     $('.cont-flip').toggleClass('flipped');
@@ -288,8 +289,13 @@ app.controller("mainController", function($scope, $http, $filter){
     var currentTime = Date.now();
     $scope.email.senderTimestamp = $filter('date')(currentTime, 'medium');
 
+    //Pass contents of email so form can be cleared
+    $scope.emailPackage = $scope.email;
+    $scope.email = {};
+
+
     //Request
-    $http.post('/sendMeEmail', $scope.email)
+    $http.post('/sendMeEmail', $scope.emailPackage)
     .success(function(data, status) {
        console.log("Sent ok");
        //Re-Flip The Div
